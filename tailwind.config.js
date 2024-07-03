@@ -12,6 +12,8 @@ export default {
         'gideon': ['Gideon Roman', 'serif'],
         'megrim': ['Megrim', 'cursive'],
         'tourney': ['Tourney', 'sans-serif'],
+        'monster': ['Montserrat Subrayada', 'sans-serif'],
+        'anton': ['Anton SC', 'sans-serif'],
       },
     },
   },

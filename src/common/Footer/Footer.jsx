@@ -11,7 +11,7 @@ const Footer = () => {
             <footer className="grid grid-cols-1 lg:grid-cols-3 gap-7 bg-slate-300 text-base-content p-10">
                 <aside className="flex flex-col justify-center items-center max-w-full">
                     <Logo2 />
-                    <p>
+                    <p className="text-center">
                         A dedicated web developer  <br /> passionate about creating dynamic and user-friendly web applications
                     </p>
                 </aside>

@@ -1,10 +1,10 @@
-import App from "../../App";
+import Banner from "./Banner/Banner";
 
 
 const Home = () => {
     return (
         <div>
-            <App></App>
+            <Banner></Banner>
         </div>
     );
 };
