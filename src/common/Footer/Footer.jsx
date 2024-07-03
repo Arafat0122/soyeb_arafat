@@ -8,31 +8,24 @@ import { IoLocationSharp } from "react-icons/io5";
 const Footer = () => {
     return (
         <div>
-            <footer className="footer bg-slate-300 text-base-content p-10">
-                <aside>
+            <footer className="grid grid-cols-1 lg:grid-cols-3 gap-7 bg-slate-300 text-base-content p-10">
+                <aside className="flex flex-col justify-center items-center max-w-full">
                     <Logo2 />
                     <p>
-                        A dedicated web developer passionate about <br /> creating dynamic and user-friendly web applications
+                        A dedicated web developer  <br /> passionate about creating dynamic and user-friendly web applications
                     </p>
                 </aside>
-                <nav>
-                    <h6 className="footer-title">Services</h6>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
-                </nav>
-                <nav>
+                <nav className="flex flex-col justify-center items-center max-w-full">
                     <h6 className="footer-title">Quick Links</h6>
                     <Link to={'/about'} className="link link-hover">About</Link>
                     <Link to={'/contact'} className="link link-hover">Contact</Link>
                     <Link to={'/works'} className="link link-hover">Works</Link>
                     <Link className="link link-hover">{`Let's Talk`}</Link>
                 </nav>
-                <nav>
+                <nav className="flex flex-col justify-center items-center max-w-full">
                     <h6 className="footer-title">Contact</h6>
                     <p className="flex items-center gap-1"><IoLocationSharp />Lalbag, Rangpur</p>
-                    <p className="flex items-center gap-1"><IoIosMail className="text-xl"/> soyebarafat0122@yahoo.com</p>
+                    <p className="flex items-center gap-1"><IoIosMail className="text-xl" /> soyebarafat0122@yahoo.com</p>
                     <p className="flex items-center gap-1"><FaPhone></FaPhone> +880 1317-110122</p>
                 </nav>
             </footer>
