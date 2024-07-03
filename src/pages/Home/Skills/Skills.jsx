@@ -23,27 +23,29 @@ const Skills = () => {
             <div className="container mx-auto">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-monster text-center mb-8">Skills & Technologies</h2>
 
-                <div className="mb-10">
-                    <h3 className="text-xl md:text-2xl lg:text-3xl font-bold font-gideon text-center mb-6">FrontEnd</h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                        {frontEndSkills.map((skill, index) => (
-                            <div key={index} className="flex flex-col w-32 items-center py-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                                <img src={skill.logo} alt={`${skill.name} logo`} className="w-20 h-20 mb-2" />
-                                <p className="text-xl font-semibold">{skill.name}</p>
-                            </div>
-                        ))}
+                <div className="grid grid-cols-2 lg:grid-cols-1 gap-9 w-full">
+                    <div className=" mx-auto">
+                        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold font-gideon text-center mb-6">FrontEnd</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                            {frontEndSkills.map((skill, index) => (
+                                <div key={index} className="flex flex-col w-32 items-center py-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                    <img src={skill.logo} alt={`${skill.name} logo`} className="w-20 h-20 mb-2" />
+                                    <p className="text-xl font-semibold">{skill.name}</p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
 
-                <div>
-                    <h3 className="text-xl md:text-2xl lg:text-3xl font-bold font-gideon text-center mb-6">BackEnd</h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                        {backEndSkills.map((skill, index) => (
-                            <div key={index} className="flex flex-col w-32 items-center py-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                                <img src={skill.logo} alt={`${skill.name} logo`} className="w-20 h-20 mb-2" />
-                                <p className="text-xl font-semibold">{skill.name}</p>
-                            </div>
-                        ))}
+                    <div className=" mx-auto">
+                        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold font-gideon text-center mb-6">BackEnd</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                            {backEndSkills.map((skill, index) => (
+                                <div key={index} className="flex flex-col w-32 items-center py-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                    <img src={skill.logo} alt={`${skill.name} logo`} className="w-20 h-20 mb-2" />
+                                    <p className="text-xl font-semibold">{skill.name}</p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
