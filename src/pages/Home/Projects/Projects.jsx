@@ -50,7 +50,7 @@ const Projects = () => {
         <div className="py-10">
             <div className="container mx-auto px-6">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-monster text-center mb-12">My Best Projects</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {projects.map((project, index) => (
                         <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 p-2 border">
                             <img src={project.image} alt={`${project.name} screenshot`} className="w-full h-56 object-cover" />
