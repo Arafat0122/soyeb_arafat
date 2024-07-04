@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "../../components/Logo";
 import "./Navbar.css"
 
@@ -8,7 +8,6 @@ const Navbar = () => {
         <li><NavLink to={"/"} className={({ isActive }) => (isActive ? "active-link" : "")} > Home </NavLink></li>
         <li><NavLink to={"/about"} className={({ isActive }) => (isActive ? "active-link" : "")} >About</NavLink></li>
         <li><NavLink to={"/works"} className={({ isActive }) => (isActive ? "active-link" : "")} >Works</NavLink></li>
-        <li><NavLink to={"/contact"} className={({ isActive }) => (isActive ? "active-link" : "")} >Contact</NavLink></li>
     </>
     return (
         <div className="">
@@ -43,7 +42,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn btn-outline">{`Let's Talk`}</a>
+                    <Link to={'/contact'}><a className="btn btn-outline">{`Let's Talk`}</a></Link>
                 </div>
             </div>
         </div>

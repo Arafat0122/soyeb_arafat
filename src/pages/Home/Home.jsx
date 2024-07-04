@@ -1,16 +1,20 @@
 import PersonalData from "../PersonalData/PersonalData";
 import Banner from "./Banner/Banner";
-import Projects from "./Projects/Projects";
+import Education from "./Education/Education";
 import Skills from "./Skills/Skills";
 
 
 const Home = () => {
     return (
         <div>
-            <Banner></Banner>
-            <PersonalData></PersonalData>
-            <Skills></Skills>
-            <Projects></Projects>
+            <div className="space-y-10">
+                <div>
+                    <Banner></Banner>
+                    <PersonalData></PersonalData>
+                </div>
+                <Skills></Skills>
+                <Education></Education>
+            </div>
         </div>
     );
 };

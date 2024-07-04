@@ -18,9 +18,8 @@ const Footer = () => {
                 <nav className="flex flex-col justify-center items-center max-w-full">
                     <h6 className="footer-title">Quick Links</h6>
                     <Link to={'/about'} className="link link-hover">About</Link>
-                    <Link to={'/contact'} className="link link-hover">Contact</Link>
                     <Link to={'/works'} className="link link-hover">Works</Link>
-                    <Link className="link link-hover">{`Let's Talk`}</Link>
+                    <Link to={'/contact'} className="link link-hover">{`Let's Talk`}</Link>
                 </nav>
                 <nav className="flex flex-col justify-center items-center max-w-full space-y-3">
                     <h6 className="footer-title">Contact</h6>
@@ -68,7 +67,7 @@ const Footer = () => {
                     </div>
                 </nav>
                 <aside>
-                    <p>Copyright © ${new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+                    <p>Copyright © ${new Date().getFullYear()} - All right reserved by Soyeb Ahmed Arafat</p>
                 </aside>
             </footer>
         </div>
