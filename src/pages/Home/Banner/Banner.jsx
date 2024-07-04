@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Banner = () => {
@@ -14,6 +15,10 @@ const Banner = () => {
                         <span className="text-red-600 font-bold">*</span>
                         <span>Consultation</span>
                     </p>
+                    <div className="navbar-end space-x-2">
+                        <Link><button className="btn bg-black text-white hover:bg-transparent hover:border hover:border-black hover:text-black font-gideon w-36">My Works</button></Link>
+                        <Link><button className="btn btn-outline font-gideon w-36">{`Let's Talk`}</button></Link>
+                    </div>
                 </div>
                 <div className="flex justify-center bg-[url(https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-512.png)] bg-no-repeat bg-cover bg-opacity-">
                     <img className="h-96" src="https://i.ibb.co/b1WPbgW/Arafat.png" alt="" />

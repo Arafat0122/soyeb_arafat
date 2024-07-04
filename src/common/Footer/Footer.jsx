@@ -22,7 +22,7 @@ const Footer = () => {
                     <Link to={'/works'} className="link link-hover">Works</Link>
                     <Link className="link link-hover">{`Let's Talk`}</Link>
                 </nav>
-                <nav className="flex flex-col justify-center items-center max-w-full">
+                <nav className="flex flex-col justify-center items-center max-w-full space-y-3">
                     <h6 className="footer-title">Contact</h6>
                     <p className="flex items-center gap-1"><IoLocationSharp />Lalbag, Rangpur</p>
                     <p className="flex items-center gap-1"><IoIosMail className="text-xl" /> soyebarafat0122@yahoo.com</p>
