@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-
-
->>>>>>> d8aa0efb56e8cbef389b332b84a7e54caf65721b
 const About = () => {
     return (
         <div>
@@ -17,29 +12,20 @@ const About = () => {
                             <p className="text-lg md:text-xl lg:text-2xl font-light leading-relaxed text-gray-700 mb-4">
                                 I am Soyeb Ahmed Arafat, a web developer skilled in HTML, CSS, JavaScript, React, Tailwind CSS, Node.js, Express.js, MongoDB, Firebase, and Git. With experience working on various web projects, I am dedicated to creating advanced and user-friendly websites. I am always eager to learn new technologies and bring innovative solutions to projects. My goal is to create beautiful and functional web applications for users while continuously improving my skills and experience in web development.
                             </p>
-<<<<<<< HEAD
-                            <div className="text-center flex flex-col md:flex-row gap-2 items-center justify-center">
-                                <a href="/Soyeb Ahmed Arafat Resume.pdf" download="Soyeb Ahmed Arafat Resume.pdf" className="inline-block bg-red-600 text-white py-2 px-6 rounded-lg font-bold transition duration-300 ease-in-out hover:bg-red-700">
-                                    Download Resume <span className="text-sm bg-white text-red-600 py-1 px-2 rounded ml-2">PDF</span>
+                            <div className="text-center text-sm md:text-base flex flex-col md:flex-row gap-2 justify-center items-center">
+                                <a href="/Soyeb Ahmed Arafat Resume.pdf" download="Soyeb Ahmed Arafat Resume.pdf" className="inline-block bg-red-600 text-white py-2 px-4 rounded-lg font-bold transition duration-300 ease-in-out hover:bg-red-700">
+                                    Download Resume (PDF)
                                 </a>
-                                <a href="/Soyeb Ahmed Arafat Resume.docx" download="Soyeb Ahmed Arafat Resume.docx" className="inline-block bg-blue-600 text-white py-2 px-6 rounded-lg font-bold transition duration-300 ease-in-out hover:bg-blue-700">
-                                    Download Resume <span className="text-sm bg-white text-blue-600 py-1 px-2 rounded ml-2">DOCX</span>
-=======
-                            <div className="text-center md:text-left">
-                                <a href="/resume_arafat.pdf" download="a.pdf" className="inline-block bg-green-500 text-white py-2 px-4 rounded-lg font-bold transition duration-300 ease-in-out hover:bg-green-600">
-                                    Download Resume
->>>>>>> d8aa0efb56e8cbef389b332b84a7e54caf65721b
+                                <a href="/Soyeb Ahmed Arafat Resume.docx" download="Soyeb Ahmed Arafat Resume.docx" className="inline-block bg-blue-600 text-white py-2 px-4 rounded-lg font-bold transition duration-300 ease-in-out hover:bg-blue-700">
+                                    Download Resume (DOCX)
                                 </a>
                             </div>
                         </div>
                     </div>
-<<<<<<< HEAD
 
-                    {/* Rest of your component remains unchanged */}
-=======
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-monster text-center my-8">My Certifications</h2>
                     <section className="bg-gray-100 lg:py-12">
-                        <div className="max-w-6xl mx-auto px-4">
+                        <div className="max-w-6xl mx-auto lg:px-4">
                             <div className="grid grid-cols-1 gap-8">
                                 {/* Certificate 1 - HP Life */}
                                 <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col justify-center items-center px-12">
@@ -75,7 +61,6 @@ const About = () => {
                             </div>
                         </div>
                     </section>
->>>>>>> d8aa0efb56e8cbef389b332b84a7e54caf65721b
                 </div>
             </div>
         </div>
