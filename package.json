@@ -17,9 +17,13 @@
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.24.0",
+<<<<<<< HEAD
     "react-tsparticles": "^2.12.2",
     "sort-by": "^1.2.0",
     "tsparticles": "^3.5.0"
+=======
+    "sort-by": "^1.2.0"
+>>>>>>> d8aa0efb56e8cbef389b332b84a7e54caf65721b
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

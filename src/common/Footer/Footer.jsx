@@ -8,7 +8,11 @@ import { IoLocationSharp } from "react-icons/io5";
 const Footer = () => {
     return (
         <div>
+<<<<<<< HEAD
             <footer className="grid grid-cols-1 lg:grid-cols-3 gap-7 bg-slate-300 p-10">
+=======
+            <footer className="grid grid-cols-1 lg:grid-cols-3 gap-7 bg-slate-300 text-base-content p-10">
+>>>>>>> d8aa0efb56e8cbef389b332b84a7e54caf65721b
                 <aside className="flex flex-col justify-center items-center max-w-full">
                     <Logo2 />
                     <p className="text-center">
@@ -28,7 +32,11 @@ const Footer = () => {
                     <p className="flex items-center gap-1"><FaPhone></FaPhone> +880 1317-110122</p>
                 </nav>
             </footer>
+<<<<<<< HEAD
             <footer className="footer footer-center bg-slate-300 pb-10">
+=======
+            <footer className="footer footer-center bg-slate-300 text-base-content pb-10">
+>>>>>>> d8aa0efb56e8cbef389b332b84a7e54caf65721b
                 <nav>
                     <div className="grid grid-flow-col gap-4">
                         <Link to={'mailto:soyebarafat0122@yahoo.com'} target="_blank" rel="noopener noreferrer">
