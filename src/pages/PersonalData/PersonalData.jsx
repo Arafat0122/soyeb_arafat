@@ -13,7 +13,7 @@ const PersonalData = () => {
                         </p>
                         <div className="text-center flex flex-col md:flex-row gap-2 items-center justify-center">
                             <a href="/public/Soyeb Ahmed Arafat Resume.pdf" download="Soyeb Ahmed Arafat Resume.pdf" className="inline-block bg-red-600 text-white py-2 px-4 rounded-lg font-bold transition duration-300 ease-in-out hover:bg-red-700">
-                                Download Resume (PDF)
+                                Download Resume (PDF) 
                             </a>
                             <a href="/public/Soyeb Ahmed Arafat Resume.docx" download="Soyeb Ahmed Arafat Resume.docx" className="inline-block bg-blue-600 text-white py-2 px-4 rounded-lg font-bold transition duration-300 ease-in-out hover:bg-blue-700">
                                 Download Resume (DOCX)
