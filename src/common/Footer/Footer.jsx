@@ -23,7 +23,7 @@ const Footer = () => {
                 </nav>
                 <nav className="flex flex-col justify-center items-center max-w-full">
                     <h6 className="text-lg font-bold pb-2 text-black">Contact</h6>
-                    <p className="flex items-center gap-1"><IoLocationSharp /> Lalbag, Rangpur</p>
+                    <p className="flex items-center gap-1"><IoLocationSharp /> Rangpur, Bangladesh</p>
                     <p className="flex items-center gap-1"><IoIosMail className="text-xl" /> soyebarafat0122@yahoo.com</p>
                     <p className="flex items-center gap-1"><FaPhone /> +880 1317-110122</p>
                 </nav>
