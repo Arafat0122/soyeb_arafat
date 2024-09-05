@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Select from 'react-select';
 import { FaCalendarAlt, FaDollarSign, FaCheckCircle } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const Services = () => {
     const [services, setServices] = useState([]);
@@ -48,7 +49,13 @@ const Services = () => {
                 : 'bg-light-green border-2 border-green-600';
 
         return (
-            <div key={service.packageName} className={`${baseClasses} ${packageClasses}`}>
+            <motion.div
+                key={service.packageName}
+                className={`${baseClasses} ${packageClasses}`}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+            >
                 <div className="flex items-center mb-4">
                     <FaCheckCircle className="text-2xl mr-2 text-gray-700" />
                     <h2 className="text-lg font-semibold uppercase">{service.packageType}</h2>
@@ -67,12 +74,17 @@ const Services = () => {
                         <li key={index}>{feature}</li>
                     ))}
                 </ul>
-            </div>
+            </motion.div>
         );
     };
 
     return (
-        <div className="p-8">
+        <motion.div
+            className="p-8 lg:my-20"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.2 }}
+        >
             <div className="flex flex-col justify-between items-center mb-8">
                 <h1 className="mb-4 text-2xl md:text-3xl lg:text-5xl font-bold font-monster">Services</h1>
                 <Select
@@ -84,7 +96,7 @@ const Services = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {/* Basic Card */}
-                <div className="flex flex-wrap justify-center items-center gap-4">
+                <div className="flex flex-wrap justify-center items-center gap-4 hover:scale-110">
                     {basicServices.map(service => (
                         <div className="w-full md:w-80 flex justify-center items-center" key={service.packageName}>
                             {renderCard(service)}
@@ -92,7 +104,7 @@ const Services = () => {
                     ))}
                 </div>
                 {/* Premium Card */}
-                <div className="flex flex-wrap justify-center items-center gap-4">
+                <div className="flex flex-wrap justify-center items-center gap-4 hover:scale-110">
                     {premiumServices.map(service => (
                         <div className="w-full md:w-80 flex justify-center items-center" key={service.packageName}>
                             {renderCard(service)}
@@ -100,7 +112,7 @@ const Services = () => {
                     ))}
                 </div>
                 {/* Standard Card */}
-                <div className="flex flex-wrap justify-center items-center gap-4">
+                <div className="flex flex-wrap justify-center items-center gap-4 hover:scale-110">
                     {standardServices.map(service => (
                         <div className="w-full md:w-80 flex justify-center items-center" key={service.packageName}>
                             {renderCard(service)}
@@ -108,7 +120,7 @@ const Services = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

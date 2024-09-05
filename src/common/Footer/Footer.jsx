@@ -5,6 +5,10 @@ import { IoIosMail } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
 
+const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 const Footer = () => {
     return (
         <footer className="bg-slate-300 p-10 pb-0 text-gray-900">
@@ -17,9 +21,9 @@ const Footer = () => {
                 </aside>
                 <nav className="flex flex-col justify-center items-center max-w-full">
                     <h6 className="text-lg font-bold pb-2 text-black">Quick Links</h6>
-                    <Link to={'/about'} className="link link-hover">About</Link>
-                    <Link to={'/works'} className="link link-hover">Works</Link>
-                    <Link to={'/contact'} className="link link-hover">{`Let's Talk`}</Link>
+                    <Link to={'/services'} className="link link-hover" onClick={scrollToTop}>Services</Link>
+                    <Link to={'/about'} className="link link-hover" onClick={scrollToTop}>About</Link>
+                    <Link to={'/works'} className="link link-hover" onClick={scrollToTop}>Works</Link>
                 </nav>
                 <nav className="flex flex-col justify-center items-center max-w-full">
                     <h6 className="text-lg font-bold pb-2 text-black">Contact</h6>
