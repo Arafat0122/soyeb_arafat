@@ -15,6 +15,11 @@ export default {
         'monster': ['Montserrat Subrayada', 'sans-serif'],
         'anton': ['Anton SC', 'sans-serif'],
       },
+      colors: {
+        'light-blue': '#D9EAF2',
+        'light-green': '#D2F4D2',
+        'royal-golden': '#F7D04D',
+      },
     },
   },
   plugins: [

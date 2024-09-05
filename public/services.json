@@ -1,0 +1,614 @@
+[
+    {
+        "name": "E-commerce",
+        "packageType": "basic",
+        "packageName": "Basic E-commerce Store",
+        "timeToComplete": "10-15 days",
+        "priceRange": "$800 - $1000",
+        "features": [
+            "Up to 10 products",
+            "Responsive design",
+            "Basic product management",
+            "Payment gateway integration",
+            "Basic SEO"
+        ]
+    },
+    {
+        "name": "E-commerce",
+        "packageType": "standard",
+        "packageName": "Standard E-commerce Store",
+        "timeToComplete": "15-20 days",
+        "priceRange": "$1200 - $1500",
+        "features": [
+            "Up to 50 products",
+            "Custom design",
+            "Advanced product management",
+            "Multiple payment options",
+            "Enhanced SEO",
+            "User accounts and orders management"
+        ]
+    },
+    {
+        "name": "E-commerce",
+        "packageType": "premium",
+        "packageName": "Premium E-commerce Platform",
+        "timeToComplete": "25-30 days",
+        "priceRange": "$2000 - $2500",
+        "features": [
+            "Unlimited products",
+            "Custom UI/UX design",
+            "Advanced features integration",
+            "Full payment and shipping integrations",
+            "Comprehensive SEO and analytics",
+            "Custom reporting and analytics"
+        ]
+    },
+    {
+        "name": "Non-Profit",
+        "packageType": "basic",
+        "packageName": "Basic Non-Profit Website",
+        "timeToComplete": "7-10 days",
+        "priceRange": "$400 - $600",
+        "features": [
+            "Up to 5 pages",
+            "Responsive design",
+            "Donation integration",
+            "Contact form",
+            "Basic SEO"
+        ]
+    },
+    {
+        "name": "Non-Profit",
+        "packageType": "standard",
+        "packageName": "Standard Non-Profit Website",
+        "timeToComplete": "10-15 days",
+        "priceRange": "$700 - $900",
+        "features": [
+            "Up to 10 pages",
+            "Custom design",
+            "Event management",
+            "Donation management",
+            "Advanced SEO",
+            "Newsletter signup"
+        ]
+    },
+    {
+        "name": "Non-Profit",
+        "packageType": "premium",
+        "packageName": "Premium Non-Profit Platform",
+        "timeToComplete": "15-20 days",
+        "priceRange": "$1000 - $1500",
+        "features": [
+            "Unlimited pages",
+            "Custom UI/UX design",
+            "Advanced donation management",
+            "Volunteer management system",
+            "Comprehensive SEO and analytics",
+            "Custom reporting and integrations"
+        ]
+    },
+    {
+        "name": "Blogging",
+        "packageType": "basic",
+        "packageName": "Basic Blog",
+        "timeToComplete": "5-7 days",
+        "priceRange": "$300 - $500",
+        "features": [
+            "Up to 5 pages",
+            "Responsive design",
+            "Basic blog setup",
+            "Content management system",
+            "Basic SEO"
+        ]
+    },
+    {
+        "name": "Blogging",
+        "packageType": "standard",
+        "packageName": "Standard Blog",
+        "timeToComplete": "7-10 days",
+        "priceRange": "$600 - $800",
+        "features": [
+            "Up to 10 pages",
+            "Custom design",
+            "Advanced blog features",
+            "Social media integration",
+            "Advanced SEO",
+            "Content scheduling"
+        ]
+    },
+    {
+        "name": "Blogging",
+        "packageType": "premium",
+        "packageName": "Premium Blog",
+        "timeToComplete": "10-15 days",
+        "priceRange": "$900 - $1200",
+        "features": [
+            "Unlimited pages",
+            "Custom UI/UX design",
+            "Advanced content management",
+            "Full social media integration",
+            "Comprehensive SEO and analytics",
+            "Custom features and widgets"
+        ]
+    },
+    {
+        "name": "Restaurant",
+        "packageType": "basic",
+        "packageName": "Basic Restaurant Website",
+        "timeToComplete": "7-10 days",
+        "priceRange": "$500 - $700",
+        "features": [
+            "Up to 5 pages",
+            "Responsive design",
+            "Menu display",
+            "Contact form",
+            "Basic SEO"
+        ]
+    },
+    {
+        "name": "Restaurant",
+        "packageType": "standard",
+        "packageName": "Standard Restaurant Website",
+        "timeToComplete": "12-15 days",
+        "priceRange": "$800 - $1000",
+        "features": [
+            "Up to 10 pages",
+            "Custom design",
+            "Online reservation system",
+            "Menu management",
+            "Advanced SEO",
+            "Social media integration"
+        ]
+    },
+    {
+        "name": "Restaurant",
+        "packageType": "premium",
+        "packageName": "Premium Restaurant Platform",
+        "timeToComplete": "20-25 days",
+        "priceRange": "$1200 - $1500",
+        "features": [
+            "Unlimited pages",
+            "Custom UI/UX design",
+            "Online ordering system",
+            "Advanced reservation management",
+            "Comprehensive SEO and analytics",
+            "Custom features and integrations"
+        ]
+    },
+    {
+        "name": "Real Estate",
+        "packageType": "basic",
+        "packageName": "Basic Real Estate Website",
+        "timeToComplete": "10-12 days",
+        "priceRange": "$600 - $800",
+        "features": [
+            "Up to 10 listings",
+            "Responsive design",
+            "Basic property management",
+            "Contact form",
+            "Basic SEO"
+        ]
+    },
+    {
+        "name": "Real Estate",
+        "packageType": "standard",
+        "packageName": "Standard Real Estate Website",
+        "timeToComplete": "15-20 days",
+        "priceRange": "$1000 - $1300",
+        "features": [
+            "Up to 30 listings",
+            "Custom design",
+            "Advanced property search",
+            "Interactive map integration",
+            "Advanced SEO",
+            "Lead management system"
+        ]
+    },
+    {
+        "name": "Real Estate",
+        "packageType": "premium",
+        "packageName": "Premium Real Estate Platform",
+        "timeToComplete": "25-30 days",
+        "priceRange": "$1500 - $2000",
+        "features": [
+            "Unlimited listings",
+            "Custom UI/UX design",
+            "Advanced search and filters",
+            "Virtual tours integration",
+            "Comprehensive SEO and analytics",
+            "Custom reporting and CRM integration"
+        ]
+    },
+    {
+        "name": "Consulting",
+        "packageType": "basic",
+        "packageName": "Basic Consulting Website",
+        "timeToComplete": "7-10 days",
+        "priceRange": "$400 - $600",
+        "features": [
+            "Up to 5 pages",
+            "Responsive design",
+            "Consulting services overview",
+            "Contact form",
+            "Basic SEO"
+        ]
+    },
+    {
+        "name": "Consulting",
+        "packageType": "standard",
+        "packageName": "Standard Consulting Website",
+        "timeToComplete": "10-15 days",
+        "priceRange": "$700 - $900",
+        "features": [
+            "Up to 10 pages",
+            "Custom design",
+            "Service detail pages",
+            "Client testimonials",
+            "Advanced SEO",
+            "Newsletter signup"
+        ]
+    },
+    {
+        "name": "Consulting",
+        "packageType": "premium",
+        "packageName": "Premium Consulting Platform",
+        "timeToComplete": "15-20 days",
+        "priceRange": "$1000 - $1500",
+        "features": [
+            "Unlimited pages",
+            "Custom UI/UX design",
+            "Advanced service management",
+            "Client portal and CRM",
+            "Comprehensive SEO and analytics",
+            "Custom reporting and integrations"
+        ]
+    },
+    {
+        "name": "Fitness",
+        "packageType": "basic",
+        "packageName": "Basic Fitness Website",
+        "timeToComplete": "7-10 days",
+        "priceRange": "$500 - $700",
+        "features": [
+            "Up to 5 pages",
+            "Responsive design",
+            "Class schedule display",
+            "Contact form",
+            "Basic SEO"
+        ]
+    },
+    {
+        "name": "Fitness",
+        "packageType": "standard",
+        "packageName": "Standard Fitness Website",
+        "timeToComplete": "12-15 days",
+        "priceRange": "$800 - $1000",
+        "features": [
+            "Up to 10 pages",
+            "Custom design",
+            "Class booking system",
+            "Trainer profiles",
+            "Advanced SEO",
+            "Social media integration"
+        ]
+    },
+    {
+        "name": "Fitness",
+        "packageType": "premium",
+        "packageName": "Premium Fitness Platform",
+        "timeToComplete": "20-25 days",
+        "priceRange": "$1200 - $1500",
+        "features": [
+            "Unlimited pages",
+            "Custom UI/UX design",
+            "Online class booking and payments",
+            "Membership management",
+            "Comprehensive SEO and analytics",
+            "Custom features and integrations"
+        ]
+    },
+    {
+        "name": "Wedding",
+        "packageType": "basic",
+        "packageName": "Basic Wedding Website",
+        "timeToComplete": "5-7 days",
+        "priceRange": "$300 - $500",
+        "features": [
+            "Up to 5 pages",
+            "Responsive design",
+            "Event details",
+            "RSVP form",
+            "Basic SEO"
+        ]
+    },
+    {
+        "name": "Wedding",
+        "packageType": "standard",
+        "packageName": "Standard Wedding Website",
+        "timeToComplete": "7-10 days",
+        "priceRange": "$600 - $800",
+        "features": [
+            "Up to 10 pages",
+            "Custom design",
+            "Gallery and registry",
+            "RSVP management",
+            "Advanced SEO",
+            "Social media integration"
+        ]
+    },
+    {
+        "name": "Wedding",
+        "packageType": "premium",
+        "packageName": "Premium Wedding Platform",
+        "timeToComplete": "10-15 days",
+        "priceRange": "$900 - $1200",
+        "features": [
+            "Unlimited pages",
+            "Custom UI/UX design",
+            "Advanced RSVP and registry features",
+            "Photo and video galleries",
+            "Comprehensive SEO and analytics",
+            "Custom features and integrations"
+        ]
+    },
+    {
+        "name": "Travel",
+        "packageType": "basic",
+        "packageName": "Basic Travel Website",
+        "timeToComplete": "7-10 days",
+        "priceRange": "$500 - $700",
+        "features": [
+            "Up to 5 pages",
+            "Responsive design",
+            "Travel destination display",
+            "Contact form",
+            "Basic SEO"
+        ]
+    },
+    {
+        "name": "Travel",
+        "packageType": "standard",
+        "packageName": "Standard Travel Website",
+        "timeToComplete": "12-15 days",
+        "priceRange": "$800 - $1000",
+        "features": [
+            "Up to 10 pages",
+            "Custom design",
+            "Booking system integration",
+            "Destination guides",
+            "Advanced SEO",
+            "Social media integration"
+        ]
+    },
+    {
+        "name": "Travel",
+        "packageType": "premium",
+        "packageName": "Premium Travel Platform",
+        "timeToComplete": "20-25 days",
+        "priceRange": "$1200 - $1500",
+        "features": [
+            "Unlimited pages",
+            "Custom UI/UX design",
+            "Advanced booking and payment system",
+            "Custom destination features",
+            "Comprehensive SEO and analytics",
+            "Custom reporting and integrations"
+        ]
+    },
+    {
+        "name": "Platform",
+        "packageType": "basic",
+        "packageName": "Basic Platform Setup",
+        "timeToComplete": "7-10 days",
+        "priceRange": "$600 - $800",
+        "features": [
+            "Up to 5 pages",
+            "Responsive design",
+            "Basic content upload",
+            "Social media integration",
+            "Basic SEO"
+        ]
+    },
+    {
+        "name": "Platform",
+        "packageType": "standard",
+        "packageName": "Standard Platform Setup",
+        "timeToComplete": "12-15 days",
+        "priceRange": "$1000 - $1200",
+        "features": [
+            "Up to 10 pages",
+            "Custom UI design",
+            "Advanced content upload",
+            "Social media and payment integration",
+            "Advanced SEO",
+            "User management"
+        ]
+    },
+    {
+        "name": "Platform",
+        "packageType": "premium",
+        "packageName": "Premium Platform Setup",
+        "timeToComplete": "20-25 days",
+        "priceRange": "$1500 - $2000",
+        "features": [
+            "Unlimited pages",
+            "Custom UI/UX design",
+            "Advanced feature integration",
+            "Payment gateway setup",
+            "Full analytics integration",
+            "Comprehensive SEO"
+        ]
+    },
+    {
+        "name": "Portfolio",
+        "packageType": "basic",
+        "packageName": "Basic Portfolio",
+        "timeToComplete": "5-7 days",
+        "priceRange": "$300 - $500",
+        "features": [
+            "Up to 3 pages",
+            "Responsive design",
+            "Basic content upload",
+            "Contact form",
+            "SEO-friendly"
+        ]
+    },
+    {
+        "name": "Portfolio",
+        "packageType": "standard",
+        "packageName": "Standard Portfolio",
+        "timeToComplete": "8-10 days",
+        "priceRange": "$600 - $800",
+        "features": [
+            "Up to 5 pages",
+            "Custom design",
+            "Portfolio gallery",
+            "Contact form integration",
+            "Advanced SEO"
+        ]
+    },
+    {
+        "name": "Portfolio",
+        "packageType": "premium",
+        "packageName": "Premium Portfolio",
+        "timeToComplete": "12-15 days",
+        "priceRange": "$1000 - $1500",
+        "features": [
+            "Unlimited pages",
+            "Custom UI/UX design",
+            "Advanced portfolio gallery",
+            "Interactive elements",
+            "Full SEO and analytics"
+        ]
+    },
+    {
+        "name": "Doctors",
+        "packageType": "basic",
+        "packageName": "Basic Doctor's Website",
+        "timeToComplete": "10-12 days",
+        "priceRange": "$700 - $900",
+        "features": [
+            "Up to 5 pages",
+            "Responsive design",
+            "Basic content upload",
+            "Contact form",
+            "Appointment booking integration"
+        ]
+    },
+    {
+        "name": "Doctors",
+        "packageType": "standard",
+        "packageName": "Standard Doctor's Website",
+        "timeToComplete": "15-18 days",
+        "priceRange": "$1000 - $1300",
+        "features": [
+            "Up to 10 pages",
+            "Custom design",
+            "Advanced appointment booking",
+            "Patient management system",
+            "SEO optimization"
+        ]
+    },
+    {
+        "name": "Doctors",
+        "packageType": "premium",
+        "packageName": "Premium Doctor's Platform",
+        "timeToComplete": "20-25 days",
+        "priceRange": "$1500 - $2000",
+        "features": [
+            "Unlimited pages",
+            "Custom UI/UX design",
+            "Telemedicine integration",
+            "Advanced patient management",
+            "SEO and analytics integration"
+        ]
+    },
+    {
+        "name": "Educational Platforms",
+        "packageType": "basic",
+        "packageName": "Basic Educational Platform",
+        "timeToComplete": "10-15 days",
+        "priceRange": "$600 - $800",
+        "features": [
+            "Up to 10 courses",
+            "Responsive design",
+            "Basic course management",
+            "User registration",
+            "Basic analytics"
+        ]
+    },
+    {
+        "name": "Educational Platforms",
+        "packageType": "standard",
+        "packageName": "Standard Educational Platform",
+        "timeToComplete": "15-20 days",
+        "priceRange": "$1000 - $1300",
+        "features": [
+            "Up to 30 courses",
+            "Custom design",
+            "Advanced course management",
+            "Payment integration",
+            "Advanced analytics",
+            "User profiles and progress tracking"
+        ]
+    },
+    {
+        "name": "Educational Platforms",
+        "packageType": "premium",
+        "packageName": "Premium Educational Platform",
+        "timeToComplete": "25-30 days",
+        "priceRange": "$2000 - $2500",
+        "features": [
+            "Unlimited courses",
+            "Custom UI/UX design",
+            "Learning management system (LMS)",
+            "Advanced analytics and reporting",
+            "Custom integrations",
+            "Full support for multimedia content"
+        ]
+    },
+    {
+        "name": "Newspaper",
+        "packageType": "basic",
+        "packageName": "Basic Newspaper Website",
+        "timeToComplete": "7-10 days",
+        "priceRange": "$500 - $700",
+        "features": [
+            "Up to 10 articles",
+            "Responsive design",
+            "Basic article management",
+            "Contact form",
+            "Basic SEO"
+        ]
+    },
+    {
+        "name": "Newspaper",
+        "packageType": "standard",
+        "packageName": "Standard Newspaper Website",
+        "timeToComplete": "12-15 days",
+        "priceRange": "$800 - $1000",
+        "features": [
+            "Up to 30 articles",
+            "Custom design",
+            "Advanced article management",
+            "Subscription system",
+            "Advanced SEO",
+            "Social media integration"
+        ]
+    },
+    {
+        "name": "Newspaper",
+        "packageType": "premium",
+        "packageName": "Premium Newspaper Platform",
+        "timeToComplete": "20-25 days",
+        "priceRange": "$1200 - $1500",
+        "features": [
+            "Unlimited articles",
+            "Custom UI/UX design",
+            "Advanced content management system",
+            "Advertisement management",
+            "Comprehensive SEO and analytics",
+            "Custom features and integrations"
+        ]
+    }
+]
