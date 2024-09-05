@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const projects = [
     {
-        name: "QutorOn - Online Quran Learning Platform",
+        name: "QutorOn",
         description: "An online platform for learning and teaching the Quran, featuring live sessions and interactive lessons.",
         coreFeatures: [
             "Live Quran sessions",
@@ -101,33 +101,35 @@ const Projects = () => {
                     {projects.map((project, index) => (
                         <motion.div
                             key={index}
-                            className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 p-2 border"
+                            className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 border"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
                         >
-                            <img src={project.image} alt={`${project.name} screenshot`} className="w-full h-56 object-cover" />
-                            <div className="p-6">
-                                <h3 className="text-2xl font-bold mb-7 font-fira">{project.name}</h3>
-                                <p className="text-lg text-gray-700 mb-4 font-fira h-24">{project.description}</p>
-                                <h4 className="text-xl font-semibold mb-2">Core Features:</h4>
-                                <ul className="list-disc list-inside mb-4 h-32">
-                                    {project.coreFeatures.map((feature, i) => (
-                                        <li key={i} className="font-gideon">{feature}</li>
-                                    ))}
-                                </ul>
-                                <h4 className="text-xl font-semibold mb-5">Technologies Used:</h4>
-                                <div className="flex flex-wrap mb-4 h-32">
-                                    {project.technologies.map((tech, i) => (
-                                        <span key={i} className="bg-gray-200 rounded-full px-4 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 h-fit">{tech}</span>
-                                    ))}
-                                </div>
-                                <div className="flex justify-between">
-                                    <a href={project.liveLink} className="btn btn-outline text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Live Project</a>
-                                    <a href={project.clientCodeLink} className="btn btn-outline text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Client Code</a>
-                                    {project.serverCodeLink && (
-                                        <a href={project.serverCodeLink} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Server Code</a>
-                                    )}
+                            <div className="flex flex-col h-full">
+                                <img src={project.image} alt={`${project.name} screenshot`} className="w-full h-56 object-cover mb-4" />
+                                <div className="flex flex-col flex-grow p-4">
+                                    <h3 className="text-2xl font-bold mb-4">{project.name}</h3>
+                                    <p className="text-lg text-gray-700 mb-4">{project.description}</p>
+                                    <h4 className="text-xl font-semibold mb-2">Core Features:</h4>
+                                    <ul className="list-disc list-inside mb-4 pl-5">
+                                        {project.coreFeatures.map((feature, i) => (
+                                            <li key={i} className="font-gideon mb-1">{feature}</li>
+                                        ))}
+                                    </ul>
+                                    <h4 className="text-xl font-semibold mb-2">Technologies Used:</h4>
+                                    <div className="flex flex-wrap mb-4">
+                                        {project.technologies.map((tech, i) => (
+                                            <span key={i} className="bg-gray-200 rounded-full px-4 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{tech}</span>
+                                        ))}
+                                    </div>
+                                    <div className="flex justify-between items-center mt-auto">
+                                        <a href={project.liveLink} className="btn btn-outline text-blue-500 hover:underline mb-2 md:mb-0" target="_blank" rel="noopener noreferrer">Live Project</a>
+                                        <a href={project.clientCodeLink} className="btn btn-outline text-blue-500 hover:underline mb-2 md:mb-0" target="_blank" rel="noopener noreferrer">Client Code</a>
+                                        {project.serverCodeLink && (
+                                            <a href={project.serverCodeLink} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Server Code</a>
+                                        )}
+                                    </div>
                                 </div>
                             </div>
                         </motion.div>
