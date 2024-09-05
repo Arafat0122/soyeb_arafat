@@ -11,7 +11,7 @@ const PersonalData = () => {
                         <p className="text-lg md:text-xl lg:text-2xl font-light leading-relaxed text-gray-700 mb-4">
                             I am Soyeb Ahmed Arafat, a web developer skilled in HTML, CSS, JavaScript, React, Tailwind CSS, Node.js, Express.js, MongoDB, Firebase, and Git. With experience working on various web projects, I am dedicated to creating advanced and user-friendly websites. I am always eager to learn new technologies and bring innovative solutions to projects. My goal is to create beautiful and functional web applications for users while continuously improving my skills and experience in web development.
                         </p>
-                        <div className="text-center md:text-left">
+                        <div className="text-center text-sm md:text-base flex flex-col md:flex-row gap-2 justify-center lg:justify-start items-center mt-6">
                             <a href="/public/Soyeb Ahmed Arafat Resume.pdf" download="Soyeb Ahmed Arafat Resume.pdf" className="inline-block bg-red-600 text-white py-2 px-4 rounded-lg font-bold transition duration-300 ease-in-out hover:bg-red-700">
                                 Download Resume (PDF)
                             </a>
