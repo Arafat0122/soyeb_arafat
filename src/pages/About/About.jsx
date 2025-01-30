@@ -43,22 +43,46 @@ const About = () => {
 
     const certificates = [
         {
-            title: "HP Life Certificate",
-            img: "https://i.ibb.co/30cXbng/hp.jpg",
-            description: "Soyeb Ahmed Arafat has successfully completed the HP LIFE online course Effective Leadership.",
-            subText: "Presented 3/6/2024 by Stephanie Bormann, Deputy Director, HP Foundation.",
+            title: "Web Development",
+            institute: "Programming Hero",
+            img: "/ph.jpg",
+            description: "A comprehensive Web Development course, gaining expertise in React, HTML, CSS, JavaScript, and more.",
+            subText: "A full-stack web development course by Jhankar Mahbub.",
         },
         {
-            title: "Programming Hero Certificate",
-            img: "https://i.ibb.co/T2YYSX8/ph.jpg",
-            description: "Soyeb Ahmed Arafat learned React, HTML, CSS, JavaScript, and more through this comprehensive web development course.",
-            subText: "A complete web development course by Jhankar Mahbub.",
+            title: "Cybersecurity Awareness",
+            institute: "HP LIFE",
+            img: "/Arafat-Cyber.png",
+            description: "This course provided an in-depth understanding of cybersecurity risks, best practices, and protective measures in digital environments.",
+            subText: "Issued on 12/23/2024 by Stephanie Bormann, Deputy Director, HP Foundation.",
         },
         {
-            title: "Coursera Certificate",
+            title: "Data Science & Analytics",
+            institute: "HP LIFE",
+            img: "/Data-Science.png",
+            description: "Soyeb Ahmed Arafat acquired essential skills in data analysis, visualization, and decision-making using data-driven approaches.",
+            subText: "Issued on 01/28/2025 by Stephanie Bormann, Deputy Director, HP Foundation.",
+        },
+        {
+            title: "Social Media Marketing",
+            institute: "HP LIFE",
+            img: "/Arafat-Leadership.png",
+            description: "This course provided in-depth knowledge on social media strategies, audience engagement, content marketing, and analytics.",
+            subText: "Issued on 09/15/2024 by Stephanie Bormann, Deputy Director, HP Foundation.",
+        },
+        {
+            title: "Effective Leadership",
+            institute: "HP LIFE",
+            img: "/Arafat-Leadership.png",
+            description: "This course focused on leadership strategies, communication skills, and team management to drive success in professional settings.",
+            subText: "Issued on 03/06/2024 by Stephanie Bormann, Deputy Director, HP Foundation.",
+        },
+        {
+            title: "Responsive Web Design",
+            institute: "Coursera",
             img: "https://i.ibb.co/thc2h2J/cr.jpg",
-            description: "Use Canva to Create Desktop and Mobile-friendly Web Pages",
-            subText: 'Verify Certificate at: <a href="https://coursera.org/verify/KP6YNDRE5GKC" class="text-blue-500">Verification Link</a>',
+            description: "Learned to create fully responsive, mobile-friendly web pages optimized for various screen sizes and devices.",
+            subText: 'Certificate Verification: <a href="https://coursera.org/verify/KP6YNDRE5GKC" class="text-blue-500">View Certificate</a>',
         },
     ];
 
@@ -116,7 +140,7 @@ const About = () => {
                                     <motion.div
                                         key={index}
                                         whileHover={{ scale: 1.05 }}
-                                        className="bg-white rounded-lg shadow-lg p-6 flex flex-col justify-center items-center transition duration-500 ease-in-out cursor-pointer"
+                                        className="bg-white rounded-lg shadow-lg p-6 flex flex-col justify-center transition duration-500 ease-in-out cursor-pointer"
                                         onClick={() => openModal(cert)}
                                         style={{ width: '100%', height: '450px' }}
                                     >
@@ -125,8 +149,9 @@ const About = () => {
                                             alt={cert.title}
                                             className="w-full h-56 object-cover rounded-md mb-4 border-2 hover:shadow-lg transition-transform duration-500 ease-in-out"
                                         />
-                                        <h3 className="text-2xl lg:text-3xl font-bold my-2 text-gray-700">{cert.title}</h3>
-                                        <p className="text-lg font-semibold text-gray-500 mb-4 text-center">{cert.description}</p>
+                                        <h3 className="text-2xl font-bold my-2 text-gray-700 text-center">{cert.title}</h3>
+                                        <h4 className="text-xl font-semibold mb-2 text-right text-gray-900">- {cert.institute}</h4>
+                                        <p className="text-gray-500 mb-4 text-center">{cert.description}</p>
                                     </motion.div>
                                 ))}
                             </div>

@@ -5,8 +5,8 @@ import Footer from "../common/Footer/Footer";
 
 const Root = () => {
     return (
-        <div className="bg-slate-100 text-black px-1 lg:px-0">
-            <div className="bg-slate-100">
+        <div className="bg-slate-200 text-black px-1 lg:px-0">
+            <div>
                 <Navbar></Navbar>
                 <div className="max-w-sm md:max-w-2xl lg:max-w-7xl mx-auto">
                     <Outlet></Outlet>
