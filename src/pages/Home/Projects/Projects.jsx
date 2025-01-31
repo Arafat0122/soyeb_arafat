@@ -2,6 +2,54 @@ import { motion } from 'framer-motion';
 
 const projects = [
     {
+        name: "Purls - Massage, Fitness, and Beauty",
+        description: "A seamless online platform for booking massage, fitness, and beauty services with an interactive book-like design and secure payment options.",
+        coreFeatures: [
+            "Easy service booking system",
+            "Secure online payments",
+            "Mobile-optimized user experience",
+            "Customer reviews and testimonials",
+            "Wellness tips and community engagement"
+        ],
+        technologies: ["MERN Stack", "React", "Tailwind CSS", "HTML5", "CSS3"],
+        liveLink: "https://purls-group.co.uk",
+        clientCodeLink: "",
+        serverCodeLink: "",
+        image: "/Purls.png"
+    },
+    {
+        name: "CodesRaft - Software, App & Web Development",
+        description: "A dynamic software, app, and web development company delivering cutting-edge solutions with a focus on performance, scalability, and user experience.",
+        coreFeatures: [
+            "Custom software and web development",
+            "Scalable and high-performance applications",
+            "Modern frontend and backend architecture",
+            "User-friendly interface design",
+            "Industry-specific tailored solutions"
+        ],
+        technologies: ["MERN Stack", "React", "Tailwind CSS", "HTML5", "CSS3"],
+        liveLink: "https://codesraft.com",
+        clientCodeLink: "", // No public repo
+        serverCodeLink: "",
+        image: "/CodesRaft.png"
+    },
+    {
+        name: "PluginAssets - Digital Tools and Resources Platform",
+        description: "A comprehensive platform providing plugins, assets, themes, and tools to enhance digital projects, ensuring seamless access and smooth user experience.",
+        coreFeatures: [
+            "Extensive collection of plugins, themes, and digital assets",
+            "User-friendly browsing and search functionality",
+            "Secure and scalable backend architecture",
+            "Seamless user authentication and data management",
+            "Optimized for performance and accessibility"
+        ],
+        technologies: ["MERN Stack", "React", "MongoDB", "Firebase", "Tailwind CSS"],
+        liveLink: "https://pluginassets.netlify.app",
+        clientCodeLink: "", // No public repo
+        serverCodeLink: "",
+        image: "/PluginAssets.png" // Add an image URL if available
+    },      
+    {
         name: "QutorOn",
         description: "An online platform for learning and teaching the Quran, featuring live sessions and interactive lessons.",
         coreFeatures: [
@@ -54,7 +102,7 @@ const projects = [
         technologies: ["React", "Tailwind CSS", "Firebase"],
         liveLink: "https://book-acent.netlify.app/",
         clientCodeLink: "https://github.com/Arafat0122/Book_Vibe",
-        serverCodeLink: "", // Assuming no separate server repo
+        serverCodeLink: "", // no separate server repo
         image: 'https://i.ibb.co/JvrJTRM/Book-Vibe-Website.png'
     },
     {
