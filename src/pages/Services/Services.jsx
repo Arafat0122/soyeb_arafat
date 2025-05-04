@@ -96,7 +96,7 @@ const Services = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {/* Basic Card */}
-                <div className="flex flex-wrap justify-center items-center gap-4 hover:scale-110">
+                <div className="flex flex-wrap justify-center items-center gap-4 hover:scale-110 transition duration-300">
                     {basicServices.map(service => (
                         <div className="w-full md:w-80 flex justify-center items-center" key={service.packageName}>
                             {renderCard(service)}
@@ -104,7 +104,7 @@ const Services = () => {
                     ))}
                 </div>
                 {/* Premium Card */}
-                <div className="flex flex-wrap justify-center items-center gap-4 hover:scale-110">
+                <div className="flex flex-wrap justify-center items-center gap-4 hover:scale-110 transition duration-300">
                     {premiumServices.map(service => (
                         <div className="w-full md:w-80 flex justify-center items-center" key={service.packageName}>
                             {renderCard(service)}
@@ -112,7 +112,7 @@ const Services = () => {
                     ))}
                 </div>
                 {/* Standard Card */}
-                <div className="flex flex-wrap justify-center items-center gap-4 hover:scale-110">
+                <div className="flex flex-wrap justify-center items-center gap-4 hover:scale-110 transition duration-300">
                     {standardServices.map(service => (
                         <div className="w-full md:w-80 flex justify-center items-center" key={service.packageName}>
                             {renderCard(service)}

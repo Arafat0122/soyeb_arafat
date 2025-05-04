@@ -37,9 +37,9 @@ const Banner = () => {
                                 My Works
                             </button>
                         </Link>
-                        <Link to={'/contact'}>
+                        <Link to={'/services'}>
                             <button className="btn btn-outline font-gideon w-36 text-black">
-                                {`Let's Talk`}
+                                {`Services`}
                             </button>
                         </Link>
                     </div>
