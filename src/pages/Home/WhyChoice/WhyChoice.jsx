@@ -1,0 +1,111 @@
+import { Banknote, Rocket, Sparkle, Star } from "lucide-react";
+import React from "react";
+import { useState } from "react";
+import { Dialog } from "@headlessui/react";
+import { Play } from "lucide-react";
+
+const WhyChoice = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <div className="py-[120px]">
+      <section className="relative flex items-center justify-center w-full px-4 py-8 md:px-0 bg-gray-950">
+        <div className="absolute bg-gray-950 inset-0 linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]  " />
+
+        {/* Content */}
+        <div className="relative z-10 mx-auto text-white max-w-7xl py-[80px]">
+          <div className="flex justify-between flex-col pb-[80px] text-center max-w-2xl mx-auto space-y-6">
+            <h1 className="text-5xl font-bold leading-tight lg:text-[58px] md:leading-[70px]">
+              Why Me 
+              right choice
+            </h1>
+            <p className="space-y-4 text-base md:text-lg ">
+              We create impactful strategies, refine brand positioning, and
+              drive real results through smart content and scalable campaigns.
+            </p>
+          </div>
+          <div className="relative flex justify-center">
+            {/* Background Image */}
+            <img
+              src="https://framerusercontent.com/images/OOn1oIfa2850QA690c30bjCBgD0.jpeg"
+              alt=""
+              className="max-h-[412px] w-[820px] bg-white/20 backdrop-blur-md p-3 rounded-xl"
+            />
+
+            {/* Play Button */}
+            <button
+              onClick={() => setIsOpen(true)}
+              className="absolute flex items-center justify-center gap-[10px]  transition -translate-x-1/2  bottom-[10%] left-1/2 theme_btn !bg-blue-600 !text-white"
+            >
+              <span>Inside our process</span>{" "}
+              <Play className="w-8 h-8 p-2 text-blue-600 bg-white rounded-full" />
+            </button>
+
+            {/* Glass Card 1 */}
+            <div className="absolute -right-[14%] flex flex-col items-center gap-2 px-4 py-2 shadow-lg top-[20%] bg-white/20 backdrop-blur-md rounded-xl">
+              {" "}
+              <Banknote className=" h-[50px] w-[100px] text-blue-500" />{" "}
+              <h6 className="text-2xl font-bold">Growth-Driven</h6>{" "}
+              <p>KPI-focused for real growth.</p>{" "}
+            </div>
+
+            {/* Glass Card 2 */}
+            <div className="absolute flex items-center gap-2 px-4 py-2 shadow-lg bottom-10 -left-[14%] bg-white/20 backdrop-blur-md rounded-xl">
+              {" "}
+              <Sparkle className="w-6 h-6 text-blue-500" />{" "}
+              <span className="font-semibold text-white">
+                {" "}
+                5+ Years of Experience{" "}
+              </span>{" "}
+            </div>
+
+            {/* Modal */}
+            <Dialog
+              open={isOpen}
+              onClose={() => setIsOpen(false)}
+              className="relative z-50"
+            >
+              <div className="fixed inset-0 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+                <Dialog.Panel className="w-full max-w-3xl overflow-hidden bg-white rounded-lg shadow-lg">
+                  {/* Close button */}
+                  <button
+                    onClick={() => setIsOpen(false)}
+                    className="absolute text-xl font-bold text-black top-3 right-3"
+                  >
+                    ✕
+                  </button>
+
+                  {/* Video */}
+                  <div className="w-full h-[400px]">
+                    <iframe
+                      className="w-full h-full"
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      title="Video"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                </Dialog.Panel>
+              </div>
+            </Dialog>
+          </div>
+
+           <div className="max-w-[820px] mx-auto pt-[80px] grid grid-cols-3 gap-12">
+            <div className="text-center">
+                <h5 className="text-5xl font-bold">98%</h5>
+                <p className="pt-4 text-lg text-gray-400">Client Success Rate</p>
+            </div>
+            <div className="text-center">
+                <h5 className="text-5xl font-bold ">200+</h5>
+                <p className="pt-4 text-lg text-gray-400">Campaigns Launched</p>
+            </div>
+            <div className="text-center">
+                <h5 className="text-5xl font-bold">$250K+</h5>
+                <p className="pt-4 text-lg text-gray-400">Revenue Generated</p>
+            </div>
+        </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default WhyChoice;

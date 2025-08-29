@@ -1,19 +1,41 @@
 import PersonalData from "../PersonalData/PersonalData";
+import SlideInView from "./Abouttext/AboutText";
+import AboutText from "./Abouttext/AboutText";
 import Banner from "./Banner/Banner";
+import Blogs from "./Blogs/Blogs";
+import ClientSay from "./ClientSay/ClientSay";
+import CompanyLogo from "./CompnayLogo/CompnayLogo";
 import Education from "./Education/Education";
-import Skills from "./Skills/Skills";
+import Faq from "./Faq/Faq";
+import GetStart from "./getStart/GetStart";
+import Project from "./Project/Project";
+import Service from "./service/Service";
+import Skills from "./skill/Skill";
+import WhyChoice from "./WhyChoice/WhyChoice";
+
 
 
 const Home = () => {
     return (
         <div>
-            <div className="space-y-10 mb-5">
+            <div className="">
                 <div>
                     <Banner></Banner>
-                    <PersonalData></PersonalData>
+                    
+                    <SlideInView/>
+                    
+                    <Service/>
+                    <Skills/>
+                    <Project/>
+                    <WhyChoice/>
+                    <ClientSay/>
+                    <Blogs/>
+                    {/* <Faq/> */}
+                    <GetStart/>
+                    {/* <PersonalData></PersonalData> */}
                 </div>
-                <Skills></Skills>
-                <Education></Education>
+                {/* <Skills></Skills>
+                <Education></Education> */}
             </div>
         </div>
     );
