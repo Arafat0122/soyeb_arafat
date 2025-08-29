@@ -19,7 +19,7 @@ const Skills = () => {
   };
 
   return (
-    <section className="z-20 flex my-[120px] flex-col justify-center text-white bg-gray-950">
+    <section className="z-20 flex  my-10 md:my-20 lg:my-[120px] flex-col justify-center text-white bg-gray-950">
       <div className="flex flex-col justify-center w-full px-4 py-10 mx-auto max-w-7xl lg:py-24">
 
         {/* Top Tag */}
@@ -41,7 +41,7 @@ const Skills = () => {
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, ease: "easeOut", }}
-            className="text-3xl font-bold lg:leading-[86px] md:text-5xl lg:text-[58px] md:leading-[70px]"
+            className="text-[22px] font-bold lg:leading-[86px] md:text-5xl lg:text-[58px] md:leading-[70px]"
           >
             <h1>
               My Extensive <br /> List of Skills

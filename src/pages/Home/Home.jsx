@@ -22,14 +22,14 @@ const Home = () => {
                 <div>
                     <Banner></Banner>
                     
-                    <SlideInView/>
+                     <SlideInView/>
                     
                     <Service/>
                     <Skills/>
                     <Project/>
                     <WhyChoice/>
                     <ClientSay/>
-                    <Blogs/>
+                    <Blogs/> 
                     {/* <Faq/> */}
                     <GetStart/>
                     {/* <PersonalData></PersonalData> */}

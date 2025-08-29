@@ -32,11 +32,11 @@ const blogPosts = [
 
 const Blogs = () => {
   return (
-    <section className="pb-[120px] pt-[60px] dark:bg-neutral-900">
+    <section className="pb-[40] md:pb-[60px] lg:pb-[120px] pt-[30px] md:pt-[60px] dark:bg-neutral-900">
       <div className="px-4 mx-auto max-w-7xl">
         {/* Section Heading */}
-        <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
+        <div className="mb-6 md:mb-12 md:text-center">
+          <h2 className="text-[22px] md:text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
             Latest Insights
           </h2>
          

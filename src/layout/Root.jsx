@@ -5,7 +5,7 @@ import Footer from "../common/Footer/Footer";
 
 const Root = () => {
     return (
-        <div className="">
+        <div className="overflow-hidden">
             <div>
                 <Navbar></Navbar>
                 <div className="bg-white">

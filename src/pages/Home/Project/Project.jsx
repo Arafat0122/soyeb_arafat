@@ -34,11 +34,11 @@ const Project = () => {
 
   return (
     <div className="px-4 py-10 mx-auto max-w-7xl">
-      <div className="flex gap-12 mb-[40px] justify-between">
-        <h1 className="text-4xl font-bold text-gray-950 w-[30%]">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-12 mb-[20px] md:mb-[40px]">
+        <h1 className=" text-[22px]  md:text-4xl font-bold text-gray-950 md:w-[50%]">
           Projects I'm Proud of
         </h1>
-        <p className="text-xl text-gray-700 w-[60%]">
+        <p className="text-base md:text-xl text-gray-700 md:w-[90%]">
           Here are some of the projects I’ve worked on, showcasing my skills in
           full-stack development, modern UI design, and scalable web solutions.
           Each project reflects my focus on performance, user experience, and

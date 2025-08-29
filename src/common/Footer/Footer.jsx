@@ -8,6 +8,7 @@ import {
   MapPin,
 } from "lucide-react";
 import Logo from "@/components/Logo";
+import { Link } from "react-router-dom";
 
 const nav = [
   { label: "Home", href: "#" },
@@ -33,7 +34,9 @@ const Footer = () => {
         <div className="grid gap-10 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <Logo/>
+            <Link to="/">
+                      <img src="/logo-main.png" alt="Logo" className="h-[80px]" />
+                    </Link>
             <p className="max-w-xs mt-4 text-sm text-neutral-400">
               Building clean, performant web experiences with React & Next.js.
             </p>

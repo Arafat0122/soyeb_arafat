@@ -4,12 +4,12 @@ import Buttons from "../../../common/Buttons/Buttons";
 
 const Service = () => {
   return (
-    <div className="mx-auto cards-container max-w-7xl py-[120px] ">
-      <div className="flex gap-12 mb-[40px]">
-        <h1 className="text-4xl font-bold text-gray-950 w-[50%]">
+    <div className="mx-auto cards-container max-w-7xl px-4 pb-10 md:py-20 lg:py-[120px] ">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-12 mb-[20px] md:mb-[40px]">
+        <h1 className=" text-[22px]  md:text-4xl font-bold text-gray-950 md:w-[50%]">
           Main Service's
         </h1>
-        <p className="text-xl text-gray-700 w-[90%]">
+        <p className="text-base md:text-xl text-gray-700 md:w-[90%]">
           Explore the key services I offer to help businesses and projects grow.
           From creating intuitive UI/UX designs to building responsive web
           applications and providing expert consultations, each service is
@@ -17,7 +17,7 @@ const Service = () => {
           results.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-[30px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
         <div className="p-4 card">
           <img src="/webDev.png" alt="Service" className="rounded-xl" />
           <h6 className="pt-5 text-3xl font-medium text-gray-950">Design</h6>

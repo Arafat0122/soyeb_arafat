@@ -33,7 +33,7 @@ const animateText = (children) => {
 
 const SlideInText = ({ children }) => {
   return (
-    <h2 className="text-2xl font-bold text-center md:text-4xl">
+    <h2 className="font-bold text-left text-[20px] lg:text-center md:text-4xl">
       {animateText(children)}
     </h2>
   );
@@ -41,7 +41,7 @@ const SlideInText = ({ children }) => {
 
 const SlideInView = () => {
   return (
-    <div className="flex flex-col items-center justify-center max-w-6xl p-4 mx-auto py-[120px] font-sans">
+    <div className="flex flex-col items-center justify-center max-w-6xl px-4 mx-auto py-10 md:py-20 lg:py-[120px] font-sans">
       <SlideInText>
         At Upreach, we deliver real{" "}
         <span className="text-blue-500">
