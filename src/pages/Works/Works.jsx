@@ -22,11 +22,11 @@ const Works = () => {
             </div>
 
             
-            <div className="flex justify-center md:w-1/2">
+            <div className="flex justify-end md:w-1/2">
               <img
                 src="/project-banner02.png"
                 alt="Project Banner"
-                className="h-auto max-h-[400px] max-w-full shadow-lg rounded-xl"
+                className="h-auto max-h-[400px] max-w-full shadow-lg rounded-xl  flex justify-end"
               />
             </div>
           </div>

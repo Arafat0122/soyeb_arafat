@@ -43,14 +43,14 @@ const SlideInView = () => {
   return (
     <div className="flex flex-col items-center justify-center max-w-6xl px-4 mx-auto py-10 md:py-20 lg:py-[120px] font-sans">
       <SlideInText>
-        At Upreach, we deliver real{" "}
+        I build{" "}
         <span className="text-blue-500">
-          results through high-converting
+          high-performance, responsive websites
         </span>{" "}
-        marketing strategies designed to scale your business, attract the right
-        audience, <span className="text-blue-500">
-         and maximize ROI with precision.
-        </span>{" "}
+        that help businesses and individuals showcase their ideas, engage their audience,{" "}
+        <span className="text-blue-500">
+          and achieve measurable results.
+        </span>
       </SlideInText>
     </div>
   );

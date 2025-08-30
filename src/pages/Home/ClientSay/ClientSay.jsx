@@ -18,7 +18,7 @@ const ChevronRightIcon = ({ className }) => (
 const cardData = [
   {
     id: 1,
-    imageUrl: "https://img.freepik.com/premium-photo/man-suit-smiles-camera_1249303-8504.jpg?w=360",
+    imageUrl: "https://static.vecteezy.com/system/resources/thumbnails/068/534/707/small_2x/happy-indian-man-entrepreneur-against-diagrams-portrait-image-positive-hindu-businessman-expressing-confidencegraphy-human-scene-successful-business-concept-realistic-photo.jpg",
     name: "John Doe",
     post: "CEO",
     company: "TechCorp Ltd.",
@@ -27,7 +27,7 @@ const cardData = [
   },
   {
     id: 2,
-    imageUrl: "https://img.freepik.com/premium-photo/man-suit-smiles-camera_1249303-8504.jpg?w=360",
+    imageUrl: "https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     name: "Sarah Khan",
     post: "Marketing Manager",
     company: "Creative Studio",
@@ -74,13 +74,13 @@ export default function ClientSay() {
   };
 
   return (
-    <section className="flex-col items-center justify-center w-full pb-12 overflow-hidden font-sans px-4">
+    <section className="flex-col items-center justify-center w-full px-4 pb-12 overflow-hidden font-sans">
       <div
-        className="w-full max-w-6xl  mx-auto"
+        className="w-full max-w-6xl mx-auto"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
-        <div className="relative flex flex-col w-full  bg-white rounded-3xl dark:border-white/10 dark:bg-neutral-900">
+        <div className="relative flex flex-col w-full bg-white rounded-3xl dark:border-white/10 dark:bg-neutral-900">
 
         <h1 className="md:text-center pb-[40px] md:pb-[80px] text-[20px] md:text-3xl lg:text-5xl font-bold">Hear What My Client are Saying</h1>
 
@@ -158,7 +158,7 @@ function Card({ card, index, activeIndex, totalCards }) {
       initial={false}
     >
       <div className="relative flex flex-col items-center w-full h-full p-6 text-center bg-white border shadow-md dark:bg-neutral-800 rounded-2xl">
-        <img src={card.imageUrl} alt={card.name} className="object-cover mt-[20px] mb-4  border-4 border-blue-500 rounded-full shadow-md h-[180px]" />
+        <img src={card.imageUrl} alt={card.name} className="object-cover mt-[20px] mb-4  border-4 border-blue-500 rounded-full shadow-md h-[180px] w-[180px]" />
         <h3 className="text-lg font-semibold">{card.name}</h3>
         <p className="text-sm text-gray-500 dark:text-gray-400">{card.post} • {card.company}</p>
         <img src="/5start.png" className="mt-2" alt="" />

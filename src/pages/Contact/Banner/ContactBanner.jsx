@@ -21,7 +21,7 @@ const ContactBanner = () => {
             </div>
 
             
-            <div className="flex justify-center md:w-1/2">
+            <div className="flex justify-end md:w-1/2">
               <img
                 src="/contact-banner.png"
                 alt="Project Banner"

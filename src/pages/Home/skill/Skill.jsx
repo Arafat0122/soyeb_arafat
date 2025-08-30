@@ -6,6 +6,7 @@ import { CarouselSize } from "./CarouselSize";
 
 import { motion } from "framer-motion";
 import { Carousel } from "@/components/ui/carousel";
+import { SkillCard } from "./SkillCard";
 
 const Skills = () => {
   const [carouselApi, setCarouselApi] = useState(null);
@@ -58,8 +59,8 @@ const Skills = () => {
               Building the world’s best marketing. Your <br className="hidden md:block" />
               trusted partner for strategy, design, and dev.
             </p>
-            <hr className="border-white" />
-            <div className="flex items-center justify-start gap-3 md:justify-end">
+            {/* <hr className="border-white" /> */}
+            {/* <div className="flex items-center justify-start gap-3 md:justify-end">
               <button
                 onClick={handlePrev}
                 className="w-10 h-10 transition-all duration-300 border border-white rounded-full hover:bg-white hover:text-black"
@@ -72,23 +73,12 @@ const Skills = () => {
               >
                 <ArrowRight className="w-5 h-5 mx-auto" />
               </button>
-            </div>
+            </div> */}
           </motion.div>
         </div>
 
         {/* Carousel */}
-        <motion.div
-          initial={{ opacity: 0, y: 60 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <Carousel setApi={setCarouselApi}>
-            <div className="relative">
-              <CarouselSize />
-              
-            </div>
-          </Carousel>
-        </motion.div>
+        <SkillCard/>
       </div>
     </section>
   );

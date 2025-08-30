@@ -1,12 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { Star, Rocket } from "lucide-react";
 import Buttons from "../../../../common/Buttons/Buttons";
 import CompanyLogo from "../../CompnayLogo/CompnayLogo";
 
 const Hero = () => {
-  const consultationRef = useRef(null);
-  const buttonRef = useRef(null);
   const dominateRef = useRef(null);
   const blubRef = useRef(null);
   const screwRef = useRef(null);
@@ -225,8 +223,7 @@ const Hero = () => {
           the Digital Space
         </h1>
         <p className="mt-3 text-base font-normal md:text-lg md:mt-6 text-slate-300">
-          Helping businesses thrive with innovative digital strategies, creative
-          solutions, and measurable outcomes.
+          Empowering brands with modern web solutions — blending strategy, design, and technology to deliver impactful digital experiences.
         </p>
         <div className="flex gap-4 mt-8">
           <Buttons btnText="Book a Call" />
