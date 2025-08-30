@@ -93,6 +93,34 @@ span.animated-dominate {
     transform: rotate(45deg);
   }
 }
+.theme_btn2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  background: #0f172a;
+  padding: 10px 10px 10px 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 45px;
+  border: none;
+
+  .arrow_icon {
+
+    background: white;
+    color: black !important;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #0f172a;
+    margin-left: 10px;
+    transform: rotate(45deg);
+  }
+}
 
 @layer base {
   :root {

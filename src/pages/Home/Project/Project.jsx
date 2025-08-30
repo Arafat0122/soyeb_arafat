@@ -1,4 +1,7 @@
-import React from "react";
+import Buttons from "@/common/Buttons/Buttons";
+import { CircleCheckBig, Cross, X } from "lucide-react";
+import React, { useState } from "react";
+import { HiArrowUp } from "react-icons/hi";
 
 const Project = () => {
   const projects = [
@@ -6,35 +9,109 @@ const Project = () => {
       name: "CodesRaft - Software, App & Web Development",
       description:
         "A dynamic software, app, and web development company delivering cutting-edge solutions with a focus on performance, scalability, and user experience.",
+      coreFeatures: [
+        "Custom software and web development",
+        "Scalable and high-performance applications",
+        "Modern frontend and backend architecture",
+        "User-friendly interface design",
+        "Industry-specific tailored solutions",
+      ],
+      technologies: ["MERN Stack", "React", "Tailwind CSS", "HTML5", "CSS3"],
       liveLink: "https://codesraft.com",
+      clientCodeLink: "",
+      serverCodeLink: "",
       image: "/CodesRaft.png",
     },
-    {
-      name: "QutorOn",
-      description:
-        "An online platform for learning and teaching the Quran, featuring live sessions and interactive lessons.",
-      liveLink: "https://qutoron.com/",
-      image: "https://i.ibb.co/zxLxz5Z/QutorOn.png",
-    },
+    
     {
       name: "Flavor Fusion",
       description:
         "A vibrant food delivery web application allowing users to explore and order from various cuisines.",
+      coreFeatures: [
+        "User authentication and profile management",
+        "Dynamic food menu and ordering system",
+        "Admin dashboard for managing orders and menu",
+      ],
+      technologies: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Tailwind CSS",
+      ],
       liveLink: "https://flavor-fusion-ask.netlify.app/",
+      clientCodeLink: "https://github.com/Arafat0122/flavor-fusion-client",
+      serverCodeLink: "",
       image: "https://i.ibb.co/YPScczg/flavor-fusion.png",
     },
     {
       name: "Resident Hover",
       description:
         "A modern real estate platform designed for seamless property management, featuring advanced search and filter options.",
+      coreFeatures: [
+        "Comprehensive property listings",
+        "Advanced search and filter options",
+        "User-friendly property management tools",
+      ],
+      technologies: ["React", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
       liveLink: "https://residentialhover.netlify.app/",
+      clientCodeLink: "https://github.com/Arafat0122/Resident-Hover",
+      serverCodeLink: "",
       image: "https://i.ibb.co/hy1v7Gn/Resident-Hover.png",
+    },
+    {
+      name: "Book Vibe",
+      description:
+        "An interactive platform for book enthusiasts to manage their reading lists, track progress, and discover new books.",
+      coreFeatures: [
+        "Manage reading lists",
+        "Track reading progress",
+        "Discover new books and genres",
+      ],
+      technologies: ["React", "Tailwind CSS", "Firebase"],
+      liveLink: "https://book-acent.netlify.app/",
+      clientCodeLink: "https://github.com/Arafat0122/Book_Vibe",
+      serverCodeLink: "",
+      image: "https://i.ibb.co/JvrJTRM/Book-Vibe-Website.png",
+    },
+    {
+      name: "Bus Ticket System",
+      description:
+        "A comprehensive system for booking bus tickets online with seat selection and payment options.",
+      coreFeatures: [
+        "Real-time seat availability",
+        "User-friendly booking interface",
+        "Secure payment gateway integration",
+      ],
+      technologies: ["HTML", "CSS", "JavaScript"],
+      liveLink: "https://arafat0122.github.io/b9a5/",
+      clientCodeLink: "https://github.com/Arafat0122/b9a5",
+      serverCodeLink: "",
+      image: "https://i.ibb.co/Hd63wwt/ph-ticket.png",
+    },
+    {
+      name: "Alpha Pro - Typing Game",
+      description:
+        "A fun and interactive typing practice game where users type the keys as they appear on screen.",
+      coreFeatures: [
+        "Random key generation",
+        "Real-time typing feedback",
+        "Score tracking and performance analysis",
+      ],
+      technologies: ["HTML", "CSS", "JavaScript"],
+      liveLink: "https://arafat0122.github.io/alpha-pro/",
+      clientCodeLink: "https://github.com/Arafat0122/alpha-pro",
+      serverCodeLink: "",
+      image: "https://i.ibb.co/vhgBj3q/alpha-pro.png",
     },
   ];
 
+  const [selectedProject, setSelectedProject] = useState(null);
+
   return (
     <div className="px-4 py-10 mx-auto max-w-7xl">
-      <div className="flex flex-col md:flex-row gap-4 md:gap-12 mb-[20px] md:mb-[40px]">
+      
+      <div className="flex flex-col md:flex-row gap-4 md:gap-12 mb-[20px] md:mb-[80px]">
         <h1 className=" text-[22px]  md:text-4xl font-bold text-gray-950 md:w-[50%]">
           Projects I'm Proud of
         </h1>
@@ -46,16 +123,15 @@ const Project = () => {
         </p>
       </div>
 
+      
       <div className="grid gap-8 md:grid-cols-2">
         {projects.map((project, index) => (
-          <a
+          <div
             key={index}
-            href={project.liveLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block overflow-hidden transition bg-white shadow-lg group rounded-2xl dark:bg-gray-900 hover:shadow-xl"
+            onClick={() => setSelectedProject(project)}
+            className="block overflow-hidden transition bg-white shadow-lg cursor-pointer group rounded-2xl dark:bg-gray-900 hover:shadow-xl"
           >
-            {/* Image */}
+           
             <div className="overflow-hidden">
               <img
                 src={project.image}
@@ -64,7 +140,7 @@ const Project = () => {
               />
             </div>
 
-            {/* Content */}
+            
             <div className="p-5">
               <h3 className="mb-2 text-xl font-semibold text-gray-900 dark:text-white">
                 {project.name}
@@ -73,9 +149,73 @@ const Project = () => {
                 {project.description}
               </p>
             </div>
-          </a>
+          </div>
         ))}
       </div>
+
+      
+      {selectedProject && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70">
+          <div className="relative w-full max-w-6xl p-6 bg-white rounded-2xl shadow-xl dark:bg-gray-900 overflow-y-auto max-h-[90vh]">
+           
+            <button
+              onClick={() => setSelectedProject(null)}
+              className="absolute text-xl text-gray-600 top-3 right-3 dark:text-gray-300 "
+            >
+              <X />
+            </button>
+
+          
+            <div className="flex flex-col gap-6 md:flex-row">
+             
+              <div className="md:w-1/2">
+                <img
+                  src={selectedProject.image}
+                  alt={selectedProject.name}
+                  className="w-full h-full rounded-lg shadow-md"
+                />
+              </div>
+
+             
+              <div className="md:w-1/2">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                  {selectedProject.name}
+                </h2>
+                <p className="mt-4 text-gray-700 dark:text-gray-300">
+                  {selectedProject.description}
+                </p>
+
+               
+                <h3 className="mt-6 text-lg font-semibold text-gray-900 dark:text-gray-200">
+                  Core Features:
+                </h3>
+                <ul className="mt-2 space-y-1 text-gray-700 list-disc list-inside dark:text-gray-300">
+                  {selectedProject.coreFeatures.map((feature, idx) => (
+                    <li className="flex items-center gap-2" key={idx}> <CircleCheckBig size={16} /> {feature}</li>
+                  ))}
+                </ul>
+
+               
+
+               
+                <div className="flex flex-wrap gap-3 mt-6">
+                  {selectedProject.liveLink && (
+                    <a
+                      href={selectedProject.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className=""
+                    >
+                      <button className="theme_btn2">Live Site <div className="arrow_icon"><HiArrowUp/></div></button>
+                    </a>
+                  )}
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
