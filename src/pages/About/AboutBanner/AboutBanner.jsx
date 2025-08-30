@@ -1,5 +1,4 @@
 import Buttons from "@/common/Buttons/Buttons";
-import React from "react";
 
 const AboutBanner = () => {
   return (
