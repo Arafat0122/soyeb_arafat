@@ -226,7 +226,11 @@ const Hero = () => {
           Empowering brands with modern web solutions — blending strategy, design, and technology to deliver impactful digital experiences.
         </p>
         <div className="flex gap-4 mt-8">
-          <Buttons btnText="Book a Call" />
+          <Buttons
+            btnText="Book a Call"
+            phoneNumber="8801608318553"
+            whatsappMessage="Hello Soyeb, I would like to discuss a web development project."
+          />
         </div>
 
         <div className="max-w-[600px] mt-[40px]">

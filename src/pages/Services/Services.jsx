@@ -65,7 +65,7 @@ const Services = () => {
     const whatsappNumber = "+8801608318553";
 
     return (
-        <div className="pt-[80px]">
+        <div className="py-[80px]">
             {/* Hero Section */}
             <div className="bg-gray-950 rounded-b-[60px]">
                 <div className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-20 mx-auto max-w-7xl md:flex-row md:px-8">

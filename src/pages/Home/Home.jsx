@@ -1,6 +1,5 @@
 import SlideInView from "./Abouttext/AboutText";
 import Banner from "./Banner/Banner";
-import Blogs from "./Blogs/Blogs";
 import ClientSay from "./ClientSay/ClientSay";
 import GetStart from "./getStart/GetStart";
 import Project from "./Project/Project";
@@ -19,10 +18,9 @@ const Home = () => {
                     <SlideInView />
                     <Service />
                     <Skills />
-                    <Project />
+                    <Project limit={4} />
                     <WhyChoice />
                     <ClientSay />
-                    {/* <Blogs /> */}
                     <GetStart />
                 </div>
             </div>

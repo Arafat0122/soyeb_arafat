@@ -13,17 +13,20 @@ const AboutBanner = () => {
             className="h-[600px]"
           />
           <h2 className="absolute text-[40px] font-bold text-white  top-[10%] uppercase left-[20%]">
-            Discover our <br /> journey and <br /> mission
+            Empowering <br /> Ideas With <br /> Code
           </h2>
           <div className="absolute max-w-xl mt-2 top-[10%] right-[5%]">
             <p className="text-sm text-white md:text-base ">
-              We are passionate about crafting innovative digital solutions that
-              empower businesses and individuals. Our team believes in
-              creativity, collaboration, and cutting-edge technology to build
-              products that truly make an impact.
+              I am passionate about crafting innovative digital solutions that empower
+              businesses and individuals. I believe in creativity, collaboration, and
+              cutting-edge technology to build products that truly make an impact.
             </p>
             <div className="flex gap-4 mt-8">
-              <Buttons btnText="Explore Opportunities" />
+              <Buttons
+                btnText="Let’s Build Together"
+                phoneNumber="8801608318553"
+                whatsappMessage="Hi Soyeb, I want to discuss a project and build something together."
+              />
             </div>
           </div>
           <h1 className="text-[170px] font-bold absolute bottom-[0%] shadow-xl">

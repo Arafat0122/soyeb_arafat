@@ -24,9 +24,9 @@ const WhyChoice = () => {
           <div className="relative flex justify-center">
 
             <img
-              src="https://framerusercontent.com/images/OOn1oIfa2850QA690c30bjCBgD0.jpeg"
+              src="/ModernDeveloperWorkstation.png"
               alt=""
-              className="max-h-[425px] w-[820px] bg-white/20 backdrop-blur-md p-3 rounded-xl"
+              className="max-h-[450px] w-[820px] bg-white/20 backdrop-blur-md p-3 rounded-xl"
             />
 
 
@@ -42,12 +42,12 @@ const WhyChoice = () => {
             <div className="absolute -right-[14%]  flex-col items-center gap-2 px-4 py-2 shadow-lg top-[20%] bg-white/20 backdrop-blur-md rounded-xl hidden lg:flex">
               {" "}
               <Banknote className=" h-[50px] w-[100px] text-blue-500" />{" "}
-              <h6 className="text-2xl font-bold">Growth-Driven</h6>{" "}
-              <p>KPI-focused for real growth.</p>{" "}
+              <h6 className="text-2xl font-bold">Your Success First</h6>
+              <p>Growing your business with focus.</p>{" "}
             </div>
 
             {/* Glass Card 2 */}
-            <div className="absolute flex items-center gap-2 px-4 py-2 shadow-lg bottom-10 -left-[14%] bg-white/20 backdrop-blur-md rounded-xl hidden lg:flex">
+            <div className="absolute items-center gap-2 px-4 py-2 shadow-lg bottom-10 -left-[14%] bg-white/20 backdrop-blur-md rounded-xl hidden lg:flex">
               {" "}
               <Sparkle className="w-6 h-6 text-blue-500" />{" "}
               <span className="font-semibold text-white">
@@ -89,11 +89,11 @@ const WhyChoice = () => {
           <div className="max-w-[820px] mx-auto pt-[40px] md:pt-[80px] grid grid-cols-3 gap-6 md:gap-12 px-4">
             <div className="text-center">
               <h5 className="md:text-5xl text-[20px] font-bold">98%</h5>
-              <p className="pt-4 text-base md:text-lg text-gray-400">Client Success Rate</p>
+              <p className="pt-4 text-base md:text-lg text-gray-400">Client Success</p>
             </div>
             <div className="text-center">
-              <h5 className="md:text-5xl text-[20px] font-bold ">200+</h5>
-              <p className="pt-4 text-base md:text-lg text-gray-400">Campaigns Launched</p>
+              <h5 className="md:text-5xl text-[20px] font-bold">200+</h5>
+              <p className="pt-4 text-base md:text-lg text-gray-400">Projects Completed</p>
             </div>
             <div className="text-center">
               <h5 className="md:text-5xl text-[20px] font-bold">$250K+</h5>

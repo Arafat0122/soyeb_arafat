@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+
 
 const Project = () => {
   const projects = [
@@ -124,7 +125,7 @@ const Project = () => {
       {/* Section Heading */}
       <div className="flex flex-col md:flex-row gap-4 md:gap-12 mb-[20px] md:mb-[40px]">
         <h1 className=" text-[22px]  md:text-4xl font-bold text-gray-950 md:w-[50%]">
-          Projects I'm Proud of
+          Projects I am Proud of
         </h1>
         <p className="text-base md:text-xl text-gray-700 md:w-[90%]">
           Here are some of the projects I’ve worked on, showcasing my skills in

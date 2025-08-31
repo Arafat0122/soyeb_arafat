@@ -1,23 +1,16 @@
-
-
-import { ArrowDown, ArrowLeft, ArrowRight } from "lucide-react";
-import React, { useState } from "react";
-import { CarouselSize } from "./CarouselSize";
-
 import { motion } from "framer-motion";
-import { Carousel } from "@/components/ui/carousel";
 import { SkillCard } from "./SkillCard";
 
 const Skills = () => {
-  const [carouselApi, setCarouselApi] = useState(null);
+  // const [carouselApi, setCarouselApi] = useState(null);
 
-  const handlePrev = () => {
-    if (carouselApi) carouselApi.scrollPrev();
-  };
+  // const handlePrev = () => {
+  //   if (carouselApi) carouselApi.scrollPrev();
+  // };
 
-  const handleNext = () => {
-    if (carouselApi) carouselApi.scrollNext();
-  };
+  // const handleNext = () => {
+  //   if (carouselApi) carouselApi.scrollNext();
+  // };
 
   return (
     <section className="z-20 flex  my-10 md:my-20 lg:my-[120px] flex-col justify-center text-white bg-gray-950">

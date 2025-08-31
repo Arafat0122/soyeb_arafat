@@ -1,5 +1,12 @@
-import React from "react";
 import Marquee from "react-fast-marquee";
+
+const logos = [
+  "https://rahmahinstitute.com/Rahmah-Institute.png",
+  "https://i.ibb.co/F4sQdL8/qutoron-logo.png",
+  "https://geekcodedig.netlify.app/assets/logo.png",
+  "https://loopglobal.netlify.app/Loop_Global_Tech.png",
+  "https://digitalcrafted.netlify.app/DigitalCrafted_Logo_HR_Dark.png"
+];
 
 const CompanyLogo = () => {
   return (
@@ -10,12 +17,12 @@ const CompanyLogo = () => {
         pauseOnHover={true}
         gradientColor="#030712"
       >
-        {[1, 2, 3, 4, 5, 6].map((num) => (
-          <div key={num} className="flex items-center mx-10">
+        {logos.map((logo, index) => (
+          <div key={index} className="flex items-center mx-10">
             <img
-              src={`/logo${num}.svg`}
-              alt={`Company Logo ${num}`}
-              className="object-contain w-auto h-[30px] company-logo"
+              src={logo}
+              alt={`Company Logo ${index + 1}`}
+              className="object-contain w-auto h-[30px] company-logo filter brightness-0 invert"
             />
           </div>
         ))}

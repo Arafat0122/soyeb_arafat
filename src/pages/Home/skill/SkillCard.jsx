@@ -1,6 +1,4 @@
-import React from "react";
 import Marquee from "react-fast-marquee";
-import { ShineBorder } from "@/components/magicui/shine-border";
 import { cn } from "@/lib/utils";
 
 const reviews = [

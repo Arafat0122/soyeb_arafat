@@ -1,5 +1,4 @@
 import { ArrowUpRight } from "lucide-react";
-import React from "react";
 
 const ContactInfo = () => {
   return (
@@ -38,7 +37,16 @@ const ContactInfo = () => {
           <p>
             <p className="pt-3 pb-1 text-xl text-white">Whatsapp</p>{" "}
             <a
-              href="https://wa.me/8801317110122"
+              href="https://wa.me/8801608318553"
+              target="_blank"
+              className="text-xl font-semibold text-white"
+            >
+              +8801608318553
+            </a>
+          </p>
+          <p>
+            <p className="pt-3 pb-1 text-xl text-white">Phone Call</p>{" "}
+            <a
               target="_blank"
               className="text-xl font-semibold text-white"
             >
