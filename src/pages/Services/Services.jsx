@@ -65,27 +65,32 @@ const Services = () => {
     const whatsappNumber = "+8801608318553";
 
     return (
-        <div className="py-16 md:py-28 lg:py-20 bg-gray-50">
+        <div className="pt-[80px]">
             {/* Hero Section */}
             <div className="bg-gray-950 rounded-b-[60px]">
-                <div className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-16 mx-auto max-w-7xl md:flex-row md:px-8">
+                <div className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-20 mx-auto max-w-7xl md:flex-row md:px-8">
+
+                    {/* Left Content */}
                     <div className="text-center md:text-left md:w-1/2">
                         <h2 className="text-3xl font-bold text-white md:text-5xl">
-                            Services That Transform Ideas Into Reality
+                            Vision Into Reality
                         </h2>
-                        <p className="mt-4 text-gray-300 md:text-lg">
-                            I deliver web solutions that combine cutting-edge technology, seamless design, and measurable results. From responsive web apps to interactive features, every service is crafted to help you achieve your business goals.
+                        <p className="mt-4 text-gray-300 md:text-lg leading-relaxed">
+                            I deliver web solutions that combine cutting-edge technology, seamless design,
+                            and measurable results. From responsive web apps to interactive features,
+                            every service is crafted to help you achieve your business goals.
                         </p>
                         <div className="mt-6">
                             <Buttons btnText="Explore Services" />
                         </div>
                     </div>
 
-                    <div className="flex justify-end md:w-1/2">
+                    {/* Right Image */}
+                    <div className="flex justify-center md:justify-end md:w-1/2">
                         <img
                             src="/Services.png"
-                            alt="Project Banner"
-                            className="h-auto max-h-[400px] max-w-full shadow-2xl rounded-xl "
+                            alt="Services Banner"
+                            className="h-auto max-h-[400px] w-full max-w-md py-[72px]"
                         />
                     </div>
                 </div>

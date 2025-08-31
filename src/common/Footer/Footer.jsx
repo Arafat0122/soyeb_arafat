@@ -1,13 +1,9 @@
-import React from "react";
 import {
-  Github,
-  Linkedin,
-  Twitter,
   Mail,
   Phone,
   MapPin,
 } from "lucide-react";
-import Logo from "@/components/Logo";
+import { FaGithub, FaFacebook, FaLinkedin, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const nav = [
@@ -19,9 +15,11 @@ const nav = [
 ];
 
 const socials = [
-  { label: "GitHub", href: "https://github.com/", icon: Github },
-  { label: "LinkedIn", href: "https://linkedin.com/", icon: Linkedin },
-  { label: "Twitter/X", href: "https://x.com/", icon: Twitter },
+  { label: "GitHub", href: "https://github.com/Arafat0122", icon: FaGithub },
+  { label: "Facebook", href: "https://www.facebook.com/arafatsoyeb?mibextid=ZbWKwL", icon: FaFacebook },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/soyeb-ahmed-arafat-b01ab9313/", icon: FaLinkedin },
+  { label: "X", href: "https://x.com/SoyebArafat", icon: FaXTwitter },
+  { label: "WhatsApp", href: "https://wa.me/8801608318553", icon: FaWhatsapp },
 ];
 
 const Footer = () => {
@@ -30,13 +28,13 @@ const Footer = () => {
   return (
     <footer className="border-t m bg-gray-950 border-neutral-200 dark:border-neutral-800 dark:bg-neutral-950">
       <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
-     
+
         <div className="grid gap-10 md:grid-cols-3">
           {/* Brand */}
           <div>
             <Link to="/">
-                      <img src="/logo-main.png" alt="Logo" className="h-[80px]" />
-                    </Link>
+              <img src="/logo-main.png" alt="Logo" className="h-[80px]" />
+            </Link>
             <p className="max-w-xs mt-4 text-sm text-neutral-400">
               Building clean, performant web experiences with React & Next.js.
             </p>
@@ -45,7 +43,7 @@ const Footer = () => {
               <p className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
                 <a href="mailto:hello@harun.dev" className="hover:underline">
-                 soyebarafat0122@yahoo.com
+                  soyebarafat0122@yahoo.com
                 </a>
               </p>
               <p className="flex items-center gap-2">
@@ -56,7 +54,7 @@ const Footer = () => {
               </p>
               <p className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-               Rangpur, Bangladesh
+                Rangpur, Bangladesh
               </p>
             </div>
           </div>

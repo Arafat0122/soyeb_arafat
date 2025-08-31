@@ -4,54 +4,51 @@ import { ShineBorder } from "@/components/magicui/shine-border";
 import { cn } from "@/lib/utils";
 
 const reviews = [
-  {
-    body: "html",
-    img: "https://res.cloudinary.com/dowpaz8fo/image/upload/v1746199960/html-5-svgrepo-com_ohq6yu.svg",
-  },
-  {
-    body: "css",
-    img: "https://res.cloudinary.com/dowpaz8fo/image/upload/v1746200067/css-3-svgrepo-com_m8hvlz.svg",
-  },
-  {
-    body: "tailwind css",
-    img: "https://res.cloudinary.com/dowpaz8fo/image/upload/v1746200065/tailwindcss-icon-svgrepo-com_qqyqku.svg",
-  },
-  {
-    body: "javascript",
-    img: "https://res.cloudinary.com/dowpaz8fo/image/upload/v1746200065/javascript-svgrepo-com_p1d06g.svg",
-  },
-  {
-    body: "react",
-    img: "https://res.cloudinary.com/dowpaz8fo/image/upload/v1746200065/react-svgrepo-com_cjuhef.svg",
-  },
-  {
-    body: "redux",
-    img: "https://res.cloudinary.com/dowpaz8fo/image/upload/v1746200067/redux-svgrepo-com_zd0hvw.svg",
-  },
-  {
-    body: "typescript",
-    img: "https://res.cloudinary.com/dowpaz8fo/image/upload/v1746200065/typescript-official-svgrepo-com_wfndsv.svg",
-  },
-  {
-    body: "next js",
-    img: "https://res.cloudinary.com/dowpaz8fo/image/upload/v1746200065/next-js-svgrepo-com_sbzzlx.svg",
-  },
-  {
-    body: "node js",
-    img: "https://res.cloudinary.com/dowpaz8fo/image/upload/v1746200070/node-js-svgrepo-com_wc1uqm.svg",
-  },
-  {
-    body: "express js",
-    img: "https://res.cloudinary.com/dowpaz8fo/image/upload/v1746200070/express-svgrepo-com_lucuds.svg",
-  },
-  {
-    body: "mongodb",
-    img: "https://res.cloudinary.com/dowpaz8fo/image/upload/v1746200070/mongo-svgrepo-com_szq9t4.svg",
-  },
-  {
-    body: "mongoose",
-    img: "https://res.cloudinary.com/dowpaz8fo/image/upload/v1746200730/mongoose_y18rc5.png",
-  },
+  // 🌐 Frontend
+  { body: "HTML5", img: "https://simpleicons.org/icons/html5.svg" },
+  { body: "CSS3", img: "https://simpleicons.org/icons/css3.svg" },
+  { body: "Tailwind CSS", img: "https://simpleicons.org/icons/tailwindcss.svg" },
+  { body: "Sass/SCSS", img: "https://simpleicons.org/icons/sass.svg" },
+  { body: "JavaScript (ES6+)", img: "https://simpleicons.org/icons/javascript.svg" },
+  { body: "TypeScript", img: "https://simpleicons.org/icons/typescript.svg" },
+  { body: "React", img: "https://simpleicons.org/icons/react.svg" },
+  { body: "Redux Toolkit", img: "https://simpleicons.org/icons/redux.svg" },
+  { body: "Next.js", img: "https://simpleicons.org/icons/nextdotjs.svg" },
+  { body: "Framer Motion", img: "https://tabler-icons.io/static/tabler-icons/icons/brand-framer-motion.svg" },  // official Tabler icon pack :contentReference[oaicite:0]{index=0}
+
+  // ⚙️ Backend
+  { body: "Node.js", img: "https://simpleicons.org/icons/node-dot-js.svg" },
+  { body: "Express.js", img: "https://simpleicons.org/icons/express.svg" },
+  { body: "MongoDB", img: "https://simpleicons.org/icons/mongodb.svg" },
+  { body: "Mongoose", img: "https://res.cloudinary.com/dowpaz8fo/image/upload/v1746200730/mongoose_y18rc5.png" }, // custom image you already had
+  { body: "REST API", img: "https://simpleicons.org/icons/swagger.svg" }, // using Swagger icon to represent APIs
+  { body: "GraphQL", img: "https://simpleicons.org/icons/graphql.svg" },
+
+  // 🗂️ CMS & Platforms
+  { body: "WordPress", img: "https://simpleicons.org/icons/wordpress.svg" },
+  { body: "Strapi", img: "https://simpleicons.org/icons/strapi.svg" },
+  { body: "Sanity CMS", img: "https://simpleicons.org/icons/sanity.svg" },
+
+  // 🚀 Tools & Optimization
+  { body: "Git & GitHub", img: "https://simpleicons.org/icons/github.svg" },
+  { body: "Docker", img: "https://simpleicons.org/icons/docker.svg" },
+  { body: "Firebase", img: "https://simpleicons.org/icons/firebase.svg" },
+  { body: "Vercel", img: "https://simpleicons.org/icons/vercel.svg" },
+  { body: "AWS", img: "https://simpleicons.org/icons/amazonaws.svg" },
+  { body: "Netlify", img: "https://simpleicons.org/icons/netlify.svg" },
+  { body: "PurgeCSS", img: "https://icon-icons.com/icons/248750/purgecss-logo/256px.svg" }, // from Kiuicons / icon-icons :contentReference[oaicite:1]{index=1}
+
+  // ✅ Testing
+  { body: "Jest", img: "https://simpleicons.org/icons/jest.svg" },
+  { body: "Cypress", img: "https://simpleicons.org/icons/cypress.svg" },
+
+  // 🤖 AI & ML
+  { body: "OpenAI", img: "https://simpleicons.org/icons/openai.svg" },
+  { body: "ChatGPT", img: "https://res.cloudinary.com/dowpaz8fo/image/upload/v1746201720/chatgpt_x2uwvx.png" }, // your own custom
+  { body: "LangChain", img: "https://res.cloudinary.com/dowpaz8fo/image/upload/v1746201740/langchain_wakxqf.png" },
+  { body: "TensorFlow", img: "https://simpleicons.org/icons/tensorflow.svg" },
+  { body: "PyTorch", img: "https://simpleicons.org/icons/pytorch.svg" },
+  { body: "Hugging Face", img: "https://simpleicons.org/icons/huggingface.svg" },
 ];
 
 const ReviewCard = ({ img, body }) => {
@@ -66,7 +63,11 @@ const ReviewCard = ({ img, body }) => {
       }}
     >
       <div className="flex flex-col items-center justify-center h-full gap-3 p-2">
-        <img className="w-8 h-8" src={img} alt={body} />
+        <img
+          className="w-8 h-8 filter invert brightness-200 contrast-200"
+          src={img}
+          alt={body}
+        />
         <h4 className="text-xs text-center text-white capitalize">{body}</h4>
       </div>
     </div>
