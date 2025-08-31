@@ -202,9 +202,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-between px-4 py-10 mx-auto md:py-20 md:gap-12 md:flex-row max-w-7xl">
-      <div className="w-full md:w-[60%]">
-        <h1 className="text-[22px] md:text-[30px] lg:text-[50px] font-bold leading-[1.3] text-white">
+    <div className="flex flex-col items-center justify-between px-4 py-10 mx-auto md:py-20 md:gap-12 lg:flex-row max-w-7xl">
+      <div className="w-full lg:w-[60%]">
+        <h1 className="text-3xl md:text-[50px] lg:text-[50px] font-bold leading-[1.3] text-white">
           Design, Development, &{" "}
           <span ref={dominateRef} className="animated-dominate">
             <span className="char">C</span>
@@ -238,11 +238,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="w-full md:w-[40%] md:h-[500px] flex justify-end relative">
+      <div className="w-full lg:w-[40%] lg:h-[500px] flex justify-end relative">
         <img
           src="https://i.ibb.co/b1WPbgW/Arafat.png"
           alt="Hero"
-          className="object-contain w-full h-full shadow-lg"
+          className="object-contain w-full h-full "
         />
 
         <div className="absolute  lg:-right-[10%] flex items-center gap-2 px-4 py-2 shadow-lg top-[42%] bg-white/20 backdrop-blur-md rounded-xl ">

@@ -3,9 +3,9 @@ import Buttons from '@/common/Buttons/Buttons';
 const ContactBanner = () => {
   return (
     <div className="pt-[80px]">
-      <div className="bg-gray-950 rounded-b-[60px]">
-        <div className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-16 mx-auto max-w-7xl md:flex-row md:px-8">
-          <div className="text-center md:text-left md:w-1/2">
+      <div className="bg-gray-950 rounded-b-2xl lg:rounded-b-[60px]">
+        <div className="flex flex-col items-center justify-between gap-8 px-6 py-16 mx-auto max-w-7xl lg:flex-row md:px-8">
+          <div className="text-left lg:w-1/2">
             <h2 className="text-3xl font-bold text-white md:text-5xl">
               Let’s Work Together
             </h2>
@@ -24,11 +24,11 @@ const ContactBanner = () => {
           </div>
 
 
-          <div className="flex justify-end md:w-1/2">
+          <div className="flex justify-end lg:w-1/2">
             <img
               src="/contact-banner.png"
               alt="Project Banner"
-              className="h-full max-h-[400px] max-w-[400px] w-full shadow-lg rounded-xl py-16"
+              className="h-full lg:max-h-[400px] lg:max-w-[400px] w-full shadow-lg rounded-xl lg:py-16"
             />
           </div>
         </div>

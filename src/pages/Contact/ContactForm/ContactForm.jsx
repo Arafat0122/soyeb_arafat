@@ -33,7 +33,7 @@ Project Details: ${details}`;
   };
 
   return (
-    <div className="px-6 text-white">
+    <div className="text-white ">
       <form
         className="p-8 space-y-6 bg-gray-950 rounded-2xl"
         onSubmit={(e) => e.preventDefault()}
@@ -121,7 +121,7 @@ Project Details: ${details}`;
         <button
           type="button"
           onClick={handleSendWhatsApp}
-          className="theme_btn flex items-center justify-center gap-2"
+          className="flex items-center justify-center gap-2 theme_btn"
         >
           Send Message
           <HiArrowUp className="arrow_icon" />

@@ -13,7 +13,7 @@ const WhyChoice = () => {
 
         <div className="relative z-10 mx-auto text-white max-w-7xl py-[40px] md:py-[80px]">
           <div className="flex justify-between flex-col pb-[40px] md:pb-[80px] text-left md:text-center max-w-2xl mx-auto space-y-6">
-            <h1 className="text-[22px] md:text-3xl lg:text-5xl font-bold leading-tight lg:text-[58px] md:leading-[70px]">
+            <h1 className="text-3xl md:text-3xl lg:text-5xl font-bold leading-tight lg:text-[58px] md:leading-[70px]">
               Why I am
               Right Choice
             </h1>
@@ -89,15 +89,15 @@ const WhyChoice = () => {
           <div className="max-w-[820px] mx-auto pt-[40px] md:pt-[80px] grid grid-cols-3 gap-6 md:gap-12 px-4">
             <div className="text-center">
               <h5 className="md:text-5xl text-[20px] font-bold">98%</h5>
-              <p className="pt-4 text-base md:text-lg text-gray-400">Client Success</p>
+              <p className="text-sm text-gray-400 md:pt-4 md:text-lg">Client Success</p>
             </div>
             <div className="text-center">
               <h5 className="md:text-5xl text-[20px] font-bold">200+</h5>
-              <p className="pt-4 text-base md:text-lg text-gray-400">Projects Completed</p>
+              <p className="text-sm text-gray-400 md:pt-4 md:text-lg">Projects Completed</p>
             </div>
             <div className="text-center">
               <h5 className="md:text-5xl text-[20px] font-bold">$250K+</h5>
-              <p className="pt-4 text-base md:text-lg text-gray-400">Revenue Generated</p>
+              <p className="text-sm text-gray-400 md:pt-4 gray-400 md:text-lg">Revenue Generated</p>
             </div>
           </div>
         </div>

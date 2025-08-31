@@ -41,7 +41,7 @@ const Service = () => {
   return (
     <div className="mx-auto cards-container max-w-7xl px-4 pb-10 md:py-20 lg:py-[120px]">
       <div className="flex flex-col md:flex-row gap-4 md:gap-12 mb-[20px] md:mb-[40px]">
-        <h1 className="text-[22px] md:text-4xl font-bold text-gray-950 md:w-[50%]">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-950 md:w-[50%]">
           Main Services
         </h1>
         <p className="text-base md:text-xl text-gray-700 md:w-[90%]">

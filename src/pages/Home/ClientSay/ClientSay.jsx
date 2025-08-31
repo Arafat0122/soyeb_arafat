@@ -101,14 +101,14 @@ export default function ClientSay() {
   };
 
   return (
-    <section className="flex-col items-center justify-center w-full pb-12 overflow-hidden font-sans px-4">
+    <section className="flex-col items-center justify-center w-full px-4 pb-[40px]  md:pb-[60px] lg:pb-[120px] overflow-hidden font-sans">
       <div
-        className="w-full max-w-6xl  mx-auto"
+        className="w-full max-w-6xl mx-auto"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
-        <div className="relative flex flex-col w-full  bg-white rounded-3xl dark:border-white/10 dark:bg-neutral-900">
-          <h1 className="md:text-center pb-[40px] md:pb-[80px] text-[20px] md:text-3xl lg:text-5xl font-bold">Hear What My Client are Saying</h1>
+        <div className="relative flex flex-col w-full bg-white rounded-3xl dark:border-white/10 dark:bg-neutral-900">
+          <h1 className="md:text-center pb-[40px] md:pb-[80px] text-3xl md:text-3xl lg:text-5xl font-bold">Hear What My Client are Saying</h1>
           <div className="relative  h-[500px] md:h-[450px] max-w-3xl w-full mx-auto flex items-center justify-center ">
             <motion.div
               className="flex items-center justify-center w-full h-full"

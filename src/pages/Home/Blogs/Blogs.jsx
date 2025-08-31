@@ -36,7 +36,7 @@ const Blogs = () => {
       <div className="px-4 mx-auto max-w-7xl">
         
         <div className="mb-6 md:mb-12 md:text-center">
-          <h2 className="text-[22px]  font-bold text-gray-900 md:text-4xl dark:text-white">
+          <h2 className="text-3xl  font-bold text-gray-900 md:text-4xl dark:text-white">
             Latest Insights
           </h2>
          

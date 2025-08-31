@@ -4,12 +4,12 @@ const ContactInfo = () => {
   return (
     <div>
       <div className="flex flex-col justify-between p-6 bg-gray-950 rounded-2xl">
-        <div className="p-6 bg-gray-900/90 rounded-2xl">
-          <div className="flex items-center gap-4">
+        <div className="p-3 md:p-6 bg-gray-900/90 rounded-2xl">
+          <div className="flex flex-col items-center gap-4 md:flex-row">
             <img
               src="/WhatsApp Image 2025-08-31 at 01.23.41_385aecd7.jpg"
               alt="Shahinul Islam"
-              className="w-24 h-24 rounded-full bg-green-950"
+              className="w-24 rounded-full md:h-24 bg-green-950"
             />
             <div>
               <h3 className="text-xl font-semibold text-white">
@@ -17,9 +17,9 @@ const ContactInfo = () => {
               </h3>
               <p className="text-lg text-white">Dedicated Web Developer</p>
             </div>
-            <ArrowUpRight className="w-8 h-8 ml-auto bg-white rounded-full text-gray-950" />
+            <ArrowUpRight className="hidden w-8 h-8 ml-auto bg-white rounded-full text-gray-950 md:block" />
           </div>
-          <p className="mt-6 text-sm text-gray-300">
+          <p className="mt-2 text-sm text-center text-gray-300 md:mt-6 md:text-left">
             We turn your vision into engaging experiences that get results.
             Let’s start creating something amazing today.
           </p>

@@ -27,7 +27,7 @@ const SkillCard = ({ skill }) => {
             href={skill.wikiLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            className="flex flex-col items-center p-4 transition-shadow duration-300 bg-white rounded-lg shadow-lg cursor-pointer hover:shadow-xl"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             initial={{ opacity: 0, y: 30 }} // Adjusted y-axis start value
@@ -42,14 +42,14 @@ const SkillCard = ({ skill }) => {
 
 const Skills = () => {
     return (
-        <div className="bg-gray-100 py-10">
-            <div className="container mx-auto px-4">
-                <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold font-monster text-center mb-8">Skills & Technologies</h2>
+        <div className="py-10 bg-gray-100">
+            <div className="container px-4 mx-auto">
+                <h2 className="mb-8 text-2xl font-bold text-center md:text-3xl lg:text-5xl font-monster">Skills & Technologies</h2>
 
                 <div className="grid grid-cols-1 gap-8">
                     <div>
-                        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold font-gideon text-center mb-6">FrontEnd</h3>
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                        <h3 className="mb-6 text-xl font-bold text-center md:text-2xl lg:text-3xl font-gideon">FrontEnd</h3>
+                        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5">
                             {frontEndSkills.map((skill, index) => (
                                 <SkillCard key={index} skill={skill} />
                             ))}
@@ -57,8 +57,8 @@ const Skills = () => {
                     </div>
 
                     <div>
-                        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold font-gideon text-center mb-6">BackEnd</h3>
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                        <h3 className="mb-6 text-xl font-bold text-center md:text-2xl lg:text-3xl font-gideon">BackEnd</h3>
+                        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5">
                             {backEndSkills.map((skill, index) => (
                                 <SkillCard key={index} skill={skill} />
                             ))}

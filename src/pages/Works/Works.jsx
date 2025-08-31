@@ -4,10 +4,10 @@ import Project from "../Home/Project/Project";
 const Works = () => {
   return (
     <>
-      <div className="py-[80px]">
-        <div className="bg-gray-950 rounded-b-[60px]">
-          <div className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-16 mx-auto max-w-7xl md:flex-row md:px-8">
-            <div className="text-center md:text-left md:w-1/2">
+      <div className="py-[80px] pb-[10px] ">
+        <div className="bg-gray-950  rounded-b-2xl lg:rounded-b-[60px]">
+          <div className="flex flex-col items-center justify-between gap-8 px-6 py-16 mx-auto max-w-7xl lg:flex-row md:px-8">
+            <div className=" md:text-left lg:w-1/2">
               <h2 className="text-3xl font-bold text-white md:text-5xl">
                 My Awesome Projects
               </h2>
@@ -22,7 +22,7 @@ const Works = () => {
             </div>
 
             
-            <div className="flex justify-end md:w-1/2">
+            <div className="flex justify-end lg:w-1/2">
               <img
                 src="/project-banner02.png"
                 alt="Project Banner"
@@ -32,7 +32,10 @@ const Works = () => {
           </div>
         </div>
 
-        <div className="mt-[100px]">
+
+        
+
+        <div className="mt-[40px] md:mt-[60px] lg:mt-[100px]">
           <Project />
         </div>
       </div>

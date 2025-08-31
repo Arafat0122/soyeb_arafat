@@ -62,10 +62,10 @@ const Faq = () => {
   };
 
   return (
-    <section className="py-16 dark:bg-neutral-900">
+    <section className="py-8 md:py-16 dark:bg-neutral-900">
       <div className="max-w-4xl px-4 mx-auto">
         {/* Section Heading */}
-        <div className="mb-12 text-center">
+        <div className="mb-12 text-left md:text-center">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl dark:text-white">
             Frequently Asked Questions
           </h2>
@@ -79,7 +79,7 @@ const Faq = () => {
           {faqData.map((item, index) => (
             <div
               key={index}
-              className="overflow-hidden border border-gray-200 rounded-2xl dark:border-neutral-700 shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="overflow-hidden transition-shadow duration-300 border border-gray-200 shadow-sm rounded-2xl dark:border-neutral-700 hover:shadow-md"
             >
               {/* Question Button */}
               <button
@@ -90,7 +90,7 @@ const Faq = () => {
                 <motion.span
                   animate={{ rotate: openIndex === index ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
-                  className="ml-2 text-xl font-bold select-none"
+                  className="ml-2 text-xl font-bold select-none md:text-xl"
                 >
                   {openIndex === index ? "−" : "+"}
                 </motion.span>
@@ -109,7 +109,7 @@ const Faq = () => {
                       ease: [0.25, 0.8, 0.25, 1], // smooth cubic-bezier
                       opacity: { duration: 0.3, delay: 0.05 },
                     }}
-                    className="px-6 pb-5 text-gray-700 dark:text-gray-300 text-sm leading-relaxed"
+                    className="px-6 pb-5 text-sm leading-relaxed text-gray-700 dark:text-gray-300"
                   >
                     {item.answer}
                   </motion.div>
