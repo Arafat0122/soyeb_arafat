@@ -27,13 +27,13 @@ Service: ${service}
 Budget: ${budget}
 Project Details: ${details}`;
 
-    const myNumber = "8801608318553"; // Your WhatsApp number
+    const myNumber = "8801608318553";
     const url = `https://wa.me/${myNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   };
 
   return (
-    <div className="text-white ">
+    <div className="px-6 text-white">
       <form
         className="p-8 space-y-6 bg-gray-950 rounded-2xl"
         onSubmit={(e) => e.preventDefault()}
@@ -121,7 +121,7 @@ Project Details: ${details}`;
         <button
           type="button"
           onClick={handleSendWhatsApp}
-          className="flex items-center justify-center gap-2 theme_btn"
+          className="theme_btn flex items-center justify-center gap-2"
         >
           Send Message
           <HiArrowUp className="arrow_icon" />

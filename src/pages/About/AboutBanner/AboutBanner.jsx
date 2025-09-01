@@ -30,7 +30,7 @@ const AboutBanner = () => {
             </div>
           </div>
           <h1 className="text-[80px]  md:text-[120px]  2xl:text-[170px] font-bold absolute bottom-[0%] shadow-xl">
-            About Us
+            About Me
           </h1>
         </div>
       </div>
