@@ -6,6 +6,32 @@ import { HiArrowUp } from "react-icons/hi";
 const Project = ({ limit }) => {
   const projects = [
     {
+      name: "Drone Qlt – Rise Above | Premium Aerial Systems",
+      description: "Architected and developed Drone Qlt, a high-end, futuristic e-commerce platform for professional drone procurement. I engineered a cinematic 'Dark Mode' interface featuring a custom-built Tactical Optic Scanner for interactive product inspection. The project integrates a real-time Global Logistics Engine that automatically synchronizes pricing with live exchange rates, ensuring a seamless procurement experience for international pilots and aerospace clients.",
+      coreFeatures: [
+        "Interactive Tactical Optic Scanner (Crosshair Zoom Engine)",
+        "Real-time Global Logistics Engine (Live Currency Sync)",
+        "Futuristic HUD-style UI with cinematic dark-grid aesthetics",
+        "Dynamic supply catalog with advanced category filtering",
+        "Custom sequential pagination (01-99) for premium navigation",
+        "Fully responsive tactical tablet and mobile optimization"
+      ],
+      technologies: [
+        "React.js",
+        "Tailwind CSS",
+        "React Router 6",
+        "Framer Motion",
+        "Currency API Integration",
+        "JavaScript ES6+",
+        "HTML5 Canvas Effects",
+        "Lucide Iconography"
+      ],
+      liveLink: "https://droneqlt.netlify.app/",
+      clientCodeLink: "https://github.com/Arafat0122/drone_qlt",
+      serverCodeLink: "",
+      image: "/DroneQltMockup.png"
+    },
+    {
       name: "GeekCode - Transforming Ideas Into High-Impact Digital Products",
       description:
         "Built a modern, responsive website for GeekCode, a digital agency. Developed the full frontend using React & Tailwind CSS, including animated hero section, About Us, services, and client trust sections. Optimized for mobile, desktop, and performance, with smooth transitions, gradient typography, and engaging CTAs to boost user engagement and conversions.",
@@ -234,35 +260,35 @@ const Project = ({ limit }) => {
         </div>
       </MotionWrapper>
 
-     
-        <div className="grid gap-8 md:grid-cols-2">
-          {displayedProjects.map((project, index) => (
-             <MotionWrapper direction="up" delay={0.1}>
+
+      <div className="grid gap-8 md:grid-cols-2">
+        {displayedProjects.map((project) => (
+          /* FIX: Key moved to the outermost element */
+          <MotionWrapper key={project.name} direction="up" delay={0.1}>
             <div
-              key={index}
               onClick={() => setSelectedProject(project)}
-              className="block overflow-hidden transition bg-white shadow-lg cursor-pointer group rounded-2xl dark:bg-gray-900 hover:shadow-xl"
+              className="overflow-hidden transition bg-white shadow-lg cursor-pointer group rounded-2xl dark:bg-gray-900 hover:shadow-xl h-full flex flex-col"
             >
-              <div className="overflow-hidden">
+              <div className="overflow-hidden bg-gray-100 dark:bg-gray-800">
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="object-cover w-full h-auto transition-transform duration-500 max-h-[400px] group-hover:scale-105"
+                  className="object-cover w-full h-64 transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="p-5">
-                <h3 className="mb-2 text-xl font-semibold text-gray-900 dark:text-white">
+              <div className="p-5 flex-grow">
+                <h3 className="mb-2 text-xl font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 transition-colors">
                   {project.name}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 line-clamp-3">
+                <p className="text-gray-600 dark:text-gray-300 line-clamp-3 text-sm">
                   {project.description}
                 </p>
               </div>
             </div>
-            </MotionWrapper>
-          ))}
-        </div>
-      
+          </MotionWrapper>
+        ))}
+      </div>
+
       {selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70">
           <div className="relative w-full max-w-6xl p-6 bg-white rounded-2xl shadow-xl dark:bg-gray-900 overflow-y-auto h-[500px]  lg:max-h-[90vh]">
@@ -273,11 +299,11 @@ const Project = ({ limit }) => {
               <X />
             </button>
             <div className="flex flex-col gap-6 md:flex-row">
-              <div className="md:w-1/2">
+              <div className="md:w-1/2 flex items-center justify-center bg-gray-50 dark:bg-gray-800/50 rounded-xl overflow-hidden min-h-[300px]">
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.name}
-                  className="w-full h-full rounded-lg shadow-md"
+                  className="w-full h-full object-contain drop-shadow-xl"
                 />
               </div>
               <div className="md:w-1/2">
